@@ -9,7 +9,7 @@ v2版本通常是v1版本ac后，参考其他代码修改而来。
 **2019.08.16**<br>
 590 N叉树的前序遍历 easy<br>
 v1 传统的递归实现<br>
-v2 循环实现，利用数组，从头进，从头出。[代码](/590 N-ary Tree Postorder Traversal/javascript/ac_v2.js)<br>
+v2 循环实现，利用数组，从头进，从头出。[代码](/590%20N-ary%20Tree%20Postorder%20Traversal/javascript/ac_v2.js)<br>
 
 **2019.08.15**
 589 N叉树的前序遍历 easy
