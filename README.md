@@ -8,7 +8,7 @@ v2版本通常是v1版本ac后，参考其他代码修改而来。
 
 **编号**|**名称**|**难度**|**完成时间**|**代码**
 --------|--------|--------|------------|--------
-590|N叉树的前序遍历|easy|2019.08.16|递归实现[循环实现](/590%20N-ary%20Tree%20Postorder%20Traversal/javascript/ac_v2.js)
+590|N叉树的前序遍历|easy|2019.08.16|[递归实现](/590%20N-ary%20Tree%20Postorder%20Traversal/javascript/ac_v1.js) [循环实现](/590%20N-ary%20Tree%20Postorder%20Traversal/javascript/ac_v2.js)
 
 **2019.08.15**
 589 N叉树的前序遍历 easy
