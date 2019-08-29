@@ -10,7 +10,7 @@ Leetcode ac answer
 
 **完成时间**|**编号**|**名称**|**难度**|**时间**|**内存**|**代码**
 --------|--------|--------|------------|--------|--------|--------
-2019.08.29|938|二叉搜索树的范围和|easy|164 / 68.21|67.1 / 50.00|[深度优先*](/700%20Search%20in%20a%20Binary%20Search%20Tree/javascript/ac_v1.js)
+2019.08.29|938|二叉搜索树的范围和|easy|164 / 68.21|67.1 / 50.00|[深度优先*](/938%20Range%20Sum%20of%20BST/javascript/ac_v1.js)
 2019.08.28|700|二叉搜索树中的搜索|easy|80 / 58.16|41.8 / 56.26|[先根遍历*](/700%20Search%20in%20a%20Binary%20Search%20Tree/javascript/ac_v1.js)
 2019.08.26|671|二叉树中第二小的节点|easy|||[深度优先*](/671%20Second%20Minimum%20Node%20In%20a%20Binary%20Tree/javascript/ac_v1.js)
 2019.08.25|669|修剪二叉搜索树|easy|||[递归循环](/669%20Trim%20a%20Binary%20Search%20Tree/javascript/ac_v1.js)
