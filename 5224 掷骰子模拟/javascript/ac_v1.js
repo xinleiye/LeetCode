@@ -32,7 +32,7 @@ var dieSimulator = function(n, rollMax) {
                 // 连续出现 m + 1 次的序列总数 = i - 1 次投掷时，连续出现 m 次的序列的和
                 } else {
                     for (let m = 1, len = rollMax[k]; m < len; m++) {
-                        rollRes[i][j][m + 1] = (rollRes[i][j][m + 1] + rollRes[i - 1][k][m]) % mod;
+                        rollRes[i][k][m + 1] = (rollRes[i][k][m + 1] + rollRes[i - 1][k][m]) % mod;
                     }
                 }
             }
