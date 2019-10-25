@@ -11,7 +11,7 @@ Leetcode ac answer
 
 **完成时间**|**编号**|**名称**|**难度**|**时间**|**内存**|**代码**
 --------|--------|--------|------------|--------|--------|--------
-2019.10.25|993|[二叉树的堂兄弟节点]()|easy|60 / 52.68|34.8 / 100|[深度优先]()
+2019.10.25|993|[二叉树的堂兄弟节点](/993%20Cousins%20in%20Binary%20Tree/question.md)|easy|60 / 52.68|34.8 / 100|[深度优先](/993%20Cousins%20in%20Binary%20Tree/javascript/ac_v1.js)
 2019.10.23|1022|[从根到叶的二进制数之和](/1022%20Sum%20of%20Root%20To%20Leaf%20Binary%20Numbers/question.md)|easy|60 / 76.44|35.5 / 100|[普通](/1022%20Sum%20of%20Root%20To%20Leaf%20Binary%20Numbers/javascript/ac_v1.js) [位运算*](1022%20Sum%20of%20Root%20To%20Leaf%20Binary%20Numbers/javascript/ac_v2.js)
 2019.10.22|965|[单值二叉树](/965%20Univalued%20Binary%20Tree/question.md)|easy|52 / 81.06|34 / 28.57|[循环](/965%20Univalued%20Binary%20Tree/javascript/ac_v1.js) [递归*](/965%20Univalued%20Binary%20Tree/javascript/ac_v2.js)
 2019.10.21|687|最长同值路径|easy|180 / 30.65|51.9 / 28.57|[广度深度](/687%20Longest%20Univalue%20Path/javascript/ac_v1.js) [深度*](/687%20Longest%20Univalue%20Path/javascript/ac_v2.js)
