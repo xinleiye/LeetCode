@@ -37,5 +37,7 @@
 2|javascript|76 / 87.92|41.5 / 35.64|[递归](/普通题库/236%20二叉树的最近公共祖先/javascript/ac_v2.js)
 
 来源：力扣（LeetCode）
+
 链接：https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree
+
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
