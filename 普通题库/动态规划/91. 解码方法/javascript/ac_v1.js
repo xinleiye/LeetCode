@@ -4,22 +4,28 @@
  */
 var numDecodings = function(s) {
     let res;
+    let len = s.length;
 
-    if (!s || s[0] === "0") {
+    if (!s) {
         return 0;
     }
-    res = new Array(s.length + 1);
-    res[0] = 0;
-    res[1] = 1;
-    for (let i = 1, len = s.length; i < len; i++) {
-        let code = parseInt(s[i - 1], 10) * 10 + parseInt(s[i], 10);
 
-        if (code <= 26) {
-            res[i + 1] = res[i] + res[i - 1];
+    res = new Array(len + 1);
+    res[len] = 1;
+    if (s[len - 1] === "0") {
+        res[len - 1] = 0;
+    } else {
+        res[len - 1] = 1;
+    }
+    for (let i = len - 2; i >= 0; i--) {
+        if (s[i] === "0") {
+            res[i] = 0;
+        } else if (Number(s[i]) * 10 + Number(s[i + 1]) <= 26) {
+            res[i] = res[i + 1] + res[i + 2];
         } else {
-            res[i + 1] = res[i] + 1;
+            res[i] = res[i + 1];
         }
     }
 
-    return res[s.length];
+    return res[0];
 };
