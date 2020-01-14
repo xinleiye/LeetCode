@@ -5,37 +5,37 @@
  */
 var makeConnected = function(n, connections) {
     let res = 0;
-    let connectMap = new Array(n);
+    let connectMap = new Map();
+    let connected = new Array(n);
+    let getConnectedPc = (connMap, conn, start) => {
+        for (let item of connMap.get(start)) {
+            if (conn[item] === 0) {
+                conn[item] = 1;
+                getConnectedPc(connMap, conn, item);
+            }
+        }
+    };
 
     if (connections.length < n - 1) {
         return -1;
     }
 
     for (let i = 0; i < n; i++) {
-        connectMap[i] = (new Array(n)).fill(0);
+        connectMap.set(i, []);
     }
 
     for (let i = 0; i < connections.length; i++) {
-        connectMap[connections[i][0]][connections[i][1]] = 1;
-        connectMap[connections[i][1]][connections[i][0]] = 1;
+        connectMap.get(connections[i][0]).push(connections[i][1]);
+        connectMap.get(connections[i][1]).push(connections[i][0]);
     }
-    console.log(connectMap);
+
+    connected.fill(0);
     for (let i = 0; i < n; i++) {
-        let connected = false;
-
-        console.log("=============");
-        for (let j = i + 1; j < n; j++) {
-            console.log(i, j, connectMap[i][j], connectMap[j][i]);
-            if (connectMap[i][j] || connectMap[j][i]) {
-                connected = true;
-                break;
-            }
-        }
-        if (!connected) {
-            console.log(i);
+        if (connected[i] === 0) {
             res++;
+            getConnectedPc(connectMap, connected, i);
         }
     }
 
-    return res;
+    return res - 1;
 };
