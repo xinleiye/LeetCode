@@ -1,20 +1,43 @@
 /**
- * @param {number[]} nums
+ * @param {number[]} arr
  * @return {number[]}
  */
-var decompressRLElist = function(nums) {
+var sortByBits = function(arr) {
     let res = [];
-    let i = 0;
-    let length = nums.length / 2;
+    let arrMap = new Map();
+    let countsArr = [];
 
-    while (i < length) {
-        let item = nums[2 * i + 1];
+    arr.forEach((val) => {
+        let num = val;
+        let count = 0;
 
-        for (let j = 0, len = nums[2 * i]; j < len; j++) {
-            res.push(item);
+        while (num > 0) {
+            if (num & 1) {
+                count++;
+            }
+            num = num >>> 1;
         }
-        i++;
-    }
+        if (arrMap.has(count)) {
+            arrMap.get(count).push(val);
+        } else {
+            arrMap.set(count ,[val]);
+        }
+    });
+
+    arrMap.forEach((value, key) => {
+        value.sort((val1, val2) => {
+            return val1 - val2;
+        });
+        countsArr.push(key);
+    });
+
+    countsArr.sort((val1, val2) => {
+        return val1 - val2;
+    });
+
+    countsArr.forEach((count) => {
+        res = res.concat(arrMap.get(count));
+    });
 
     return res;
 };
