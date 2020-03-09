@@ -13,31 +13,30 @@
  */
 var levelOrder = function(root) {
     let res = [];
-    let roots = [];
-    let node;
-    let levelNode;
-    
+    let nodes = [];
+
     if (!root) {
         return [];
-    } else {
-        roots.push(root);
     }
-    // roots为队列FIFO
-    while(roots.length) {
-        let len = roots.length;
 
-        levelNode = [];
-        for (let i = 0; i < len; i++) {
-            node = roots.shift();
-            levelNode.push(node.val);
+    nodes.push(root);
+    while (nodes.length) {
+        let nodesVal = [];
+        let nodesBuffer = [];
+
+        for (let i = 0, len = nodes.length; i < len; i++) {
+            let node = nodes[i];
+
+            nodesVal.push(node.val);
             if (node.left) {
-                roots.push(node.left);
+                nodesBuffer.push(node.left);
             }
             if (node.right) {
-                roots.push(node.right);
+                nodesBuffer.push(node.right);
             }
         }
-        res.push(levelNode);
+        nodes = nodesBuffer;
+        res.push(nodesVal);
     }
 
     return res;
