@@ -8,8 +8,6 @@
 /**
  * @param {TreeNode} root
  * @return {number[][]}
- * @Runtime 52 ms, faster than 92.67% of JavaScript online submissions for Binary Tree Level Order Traversal II.
- * @Memory_Usage 34.9 MB, less than 52.63% of JavaScript online submissions for Binary Tree Level Order Traversal II.
  */
 var levelOrderBottom = function(root) {
     let res = [];
