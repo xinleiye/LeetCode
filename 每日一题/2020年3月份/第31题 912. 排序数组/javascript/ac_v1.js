@@ -1,46 +1,48 @@
 /**
- * @param {number[][]} grid
- * @return {number}
+ * @param {number[]} nums
+ * @return {number[]}
  */
-var maxDistance = function(grid) {
-    let target = null;
-    let visited = new Array(grid.length);
-    let pointQueue = [];
-    let rowLen = grid.length;
-    let colLen = grid[0].length;
-    let directions = [[-1, 0], [1, 0], [0, -1], [0, 1]];
+var sortArray = function(nums) {
+    let res = nums.slice();
+    let mergeSort = (arr, l, r) => {
+        let count = 0;
+        let mid = (l + r) >>> 1;
+        let i = l;
+        let j = mid + 1;
+        let buffer;
 
-    for (let i = 0; i < rowLen; i++) {
-        visited[i] = new Array(colLen).fill(0);
-    }
-
-    for (let i = 0; i < rowLen; i++) {
-        for (let j = 0; j < colLen; j++) {
-            if (grid[i][j] === 1) {
-                pointQueue.push([i, j]);
-                visited[i][j] = 1;
-            }
+        if (l >= r) {
+            return;
         }
-    }
 
-    // 没有陆地或海洋
-    if (pointQueue.length === 0 || pointQueue.length === rowLen * colLen) {
-        return -1;
-    }
+        mergeSort(arr, l, mid);
+        mergeSort(arr, mid + 1, r);
 
-    while (pointQueue.length) {
-        target = pointQueue.shift();
-        for (let i = 0; i < 4; i++) {
-            let row = target[0] + directions[i][0];
-            let col = target[1] + directions[i][1];
+        buffer = new Array(r - l + 1).fill(0);
 
-            if (row < 0 || row >= rowLen || col < 0 || col >= colLen || visited[row][col] > 0) {
-                continue;
+        while (i <= mid && j <= r) {
+            if (arr[i] < arr[j]) {
+                buffer[count] = arr[i++];
+            } else {
+                buffer[count] = arr[j++];
             }
-            visited[row][col] = visited[target[0]][target[1]] + 1;
-            pointQueue.push([row, col]);
+            count++;
         }
-    }
+        while (i <= mid) {
+            buffer[count] = arr[i++];
+            count++;
+        }
+        while (j <= r) {
+            buffer[count] = arr[j++];
+            count++;
+        }
 
-    return visited[target[0]][target[1]] - 1;
+        for (let k = 0, len = r - l + 1; k < len; k++) {
+            res[l + k] = buffer[k];
+        }
+    };
+
+    mergeSort(res, 0, res.length - 1);
+
+    return res;
 };
