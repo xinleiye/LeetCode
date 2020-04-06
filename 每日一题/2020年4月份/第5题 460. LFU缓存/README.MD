@@ -31,7 +31,7 @@ cache.get(4);       // 返回 4
 
 **#**|**编程语言**|**时间（ms / %）**|**内存（MB / %）**|**代码**
 --|--|--|--|--
-1|javascript|?? / ??|?? / ??|[双哈希](./javascript/ac_v1.js)
+1|javascript|276 / 33.33|60.6 / 100|[双哈希](./javascript/ac_v1.js)
 
 来源：力扣（LeetCode）
 

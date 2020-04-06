@@ -7,10 +7,10 @@ function Node (key, val, freq) {
     this.freq = freq ? freq : 1;
 }
 
-function updateFreqMap (map, node, oldFreq, newFreq) {
+function updateFreqMap (map, node, oldFreq) {
     let nodeList;
 
-    if (map.has(oldFreq)) {
+    if (oldFreq && map.has(oldFreq)) {
         nodeList = map.get(oldFreq);
         if (nodeList.length === 1) {
             map.delete(oldFreq);
@@ -26,10 +26,10 @@ function updateFreqMap (map, node, oldFreq, newFreq) {
             nodeList.splice(index, 1);
         }
     }
-    if (map.has(newFreq)) {
-        map.get(newFreq).push(node);
+    if (map.has(node.freq)) {
+        map.get(node.freq).push(node);
     } else {
-        map.set(newFreq, [node]);
+        map.set(node.freq, [node]);
     }
 }
 
@@ -57,33 +57,12 @@ LFUCache.prototype.get = function(key) {
         freq = node.freq;
         node.freq++;
 
-        updateFreqMap(this.freqMap, node, freq, node.freq);
-        // if (this.freqMap.has(freq)) {
-        //     let nodeList = this.freqMap.get(freq);
-
-        //     if (nodeList.length === 1) {
-        //         this.freqMap.delete(freq);
-        //     } else {
-        //         let index;
-
-        //         for (let i = 0; i < nodeList.length; i++) {
-        //             if (nodeList[i].key === key) {
-        //                 index = i;
-        //                 break;
-        //             }
-        //         }
-        //         nodeList.splice(index, 1);
-        //     }
-        // }
-        // if (this.freqMap.has(node.freq)) {
-        //     this.freqMap.get(node.freq).push(node);
-        // } else {
-        //     this.freqMap.set(node.freq, [node]);
-        // }
-
-        if (freq === this.minFreq) {
-            this.minFreq++;
+        if (this.freqMap.get(freq).length === 1) {
+            if (freq === this.minFreq) {
+                this.minFreq++;
+            }
         }
+        updateFreqMap(this.freqMap, node, freq);
 
         return node.val;
     } else {
@@ -111,57 +90,26 @@ LFUCache.prototype.put = function(key, value) {
         node.val = value;
         node.freq++;
 
-        if (this.freqMap.has(freq)) {
-            let nodeList = this.freqMap.get(freq);
-
-            if (nodeList.length === 1) {
-                this.freqMap.delete(freq);
-            } else {
-                let index;
-
-                for (let i = 0; i < nodeList.length; i++) {
-                    if (nodeList[i].key === key) {
-                        index = i;
-                        break;
-                    }
-                }
-                nodeList.splice(index, 1);
+        if (this.freqMap.get(freq).length === 1) {
+            if (freq === this.minFreq) {
+                this.minFreq++;
             }
         }
-        if (freq === this.minFreq) {
-            this.minFreq++;
-        }
+
+        updateFreqMap(this.freqMap, node, freq);
     } else {
         node = new Node(key, value, 1);
 
         if (this.keyMap.size < this.maxSize) {
             this.keyMap.set(key, node);
+            updateFreqMap(this.freqMap, node);
         } else {
-            if (this.freqMap.has(this.minFreq)) {
-                let nodeList = this.freqMap.get(this.minFreq);
-
-                if (nodeList.length === 1) {
-                    this.freqMap.delete(this.minFreq);
-                } else {
-                    let index;
-
-                    for (let i = 0; i < nodeList.length; i++) {
-                        if (nodeList[i].key === key) {
-                            index = i;
-                            break;
-                        }
-                    }
-                    nodeList.splice(index, 1);
-                }
-            }
+            this.keyMap.delete(this.freqMap.get(this.minFreq)[0].key);
+            this.keyMap.set(key, node);
+            updateFreqMap(this.freqMap, node, this.minFreq);
         }
 
         this.minFreq = 1;
-    }
-    if (this.freqMap.has(node.freq)) {
-        this.freqMap.get(node.freq).push(node);
-    } else {
-        this.freqMap.set(node.freq, [node]);
     }
 };
 
