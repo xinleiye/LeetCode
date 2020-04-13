@@ -1,7 +1,7 @@
-function Tweet (userId, tweetId) {
+function Tweet (userId, tweetId, date) {
     this.tweetId = tweetId;
     this.userId = userId;
-    this.date = new Date().getTime();
+    this.date = date;
 }
 
 function UserInfo (userId) {
@@ -24,6 +24,7 @@ function updateUserLastTweets (map, userId, tweet) {
  * Initialize your data structure here.
  */
 var Twitter = function() {
+    this.date = 0;
     this.userMap = new Map();
 };
 
@@ -34,7 +35,7 @@ var Twitter = function() {
  * @return {void}
  */
 Twitter.prototype.postTweet = function(userId, tweetId) {
-    let tweet = new Tweet(userId, tweetId);
+    let tweet = new Tweet(userId, tweetId, this.date++);
 
     if (this.userMap.has(userId)) {
         let userInfo = this.userMap.get(userId);
@@ -88,15 +89,26 @@ Twitter.prototype.follow = function(followerId, followeeId) {
         userInfo = this.userMap.get(followerId);
     }
 
+    if (userInfo.followeeIds.has(followeeId)) {
+        return;
+    }
+
     userInfo.followeeIds.add(followeeId);
     if (!this.userMap.has(followeeId)) {
         this.userMap.set(followeeId, new UserInfo(followeeId));
     } else {
         userInfo.lastTweets = userInfo.lastTweets.concat(this.userMap.get(followeeId).myTweets.slice(-10)).sort((tweet1, tweet2) => {
-            return tweet1.date - tweet2.date;
-        }).slice(-10);
+            return tweet2.date - tweet1.date;
+        }).slice(0, 10);
     }
-
+    // console.log(userInfo.lastTweets);
+    // console.log(this.userMap.get(followeeId).myTweets);
+    // console.log(userInfo.lastTweets.concat(this.userMap.get(followeeId).myTweets.slice(-10)).sort((tweet1, tweet2) => {
+    //         return tweet2.date - tweet1.date;
+    //     }));
+    // console.log(userInfo.lastTweets.concat(this.userMap.get(followeeId).myTweets.slice(-10)).sort((tweet1, tweet2) => {
+    //         return tweet2.date - tweet1.date;
+    //     }).slice(0, 10));
     this.userMap.get(followeeId).followerIds.add(followerId);
 };
 
@@ -108,10 +120,18 @@ Twitter.prototype.follow = function(followerId, followeeId) {
  */
 Twitter.prototype.unfollow = function(followerId, followeeId) {
     let tweets = [];
-    let userInfo = this.userMap.get(followerId);
+    let userInfo;
 
     if (followerId === followeeId) {
         return;
+    }
+    if (!this.userMap.has(followeeId)) {
+        return;
+    }
+    if (!this.userMap.has(followerId)) {
+        return;
+    } else {
+        userInfo = this.userMap.get(followerId);
     }
 
     userInfo.followeeIds.delete(followeeId);
@@ -121,8 +141,8 @@ Twitter.prototype.unfollow = function(followerId, followeeId) {
     });
     tweets = tweets.concat(userInfo.myTweets);
     userInfo.lastTweets = tweets.sort((tweet1, tweet2) => {
-        return tweet1.date - tweet2.date;
-    }).slice(-10);
+        return tweet2.date - tweet1.date;
+    }).slice(0, 10);
 
     this.userMap.get(followeeId).followerIds.delete(followerId);
 };
