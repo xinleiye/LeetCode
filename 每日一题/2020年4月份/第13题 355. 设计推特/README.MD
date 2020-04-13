@@ -40,7 +40,7 @@ twitter.getNewsFeed(1);
 
 **#**|**编程语言**|**时间（ms / %）**|**内存（MB / %）**|**代码**
 --|--|--|--|--
-1|javascript|?? / ??|?? / ??|[??](./javascript/ac_v1.js)
+1|javascript|160 / 50|47.4 / 100|[哈希](./javascript/ac_v1.js)
 
 来源：力扣（LeetCode）
 
