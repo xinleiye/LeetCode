@@ -101,14 +101,7 @@ Twitter.prototype.follow = function(followerId, followeeId) {
             return tweet2.date - tweet1.date;
         }).slice(0, 10);
     }
-    // console.log(userInfo.lastTweets);
-    // console.log(this.userMap.get(followeeId).myTweets);
-    // console.log(userInfo.lastTweets.concat(this.userMap.get(followeeId).myTweets.slice(-10)).sort((tweet1, tweet2) => {
-    //         return tweet2.date - tweet1.date;
-    //     }));
-    // console.log(userInfo.lastTweets.concat(this.userMap.get(followeeId).myTweets.slice(-10)).sort((tweet1, tweet2) => {
-    //         return tweet2.date - tweet1.date;
-    //     }).slice(0, 10));
+
     this.userMap.get(followeeId).followerIds.add(followerId);
 };
 
