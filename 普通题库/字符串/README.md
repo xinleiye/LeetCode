@@ -2,4 +2,4 @@
 
 **名称**|**难度**
 --------|--------
-[1071 Greatest Common Divisor of Strings](./problems/1071%20Greatest%20Common%20Divisor%20of%20Strings)|easy
+[1071 Greatest Common Divisor of Strings](../problems/1071%20Greatest%20Common%20Divisor%20of%20Strings)|easy
