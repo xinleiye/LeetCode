@@ -21,7 +21,7 @@ return its depth = 3.
 
 **#**|**编程语言**|**时间（ms / %）**|**内存（MB / %）**|**代码**
 --|--|--|--|--
-1|javascript|80 / 35.70|37.1 / 67.89|[深度优先]](./javascript/ac_v1.js)
+1|javascript|80 / 35.70|37.1 / 67.89|[深度优先](./javascript/ac_v1.js)
 
 来源：力扣（LeetCode）
 
