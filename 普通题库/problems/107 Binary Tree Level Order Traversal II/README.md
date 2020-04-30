@@ -24,8 +24,8 @@ return its bottom-up level order traversal as:
 
 **#**|**编程语言**|**时间（ms / %）**|**内存（MB / %）**|**代码**
 --|--|--|--|--
-1|javascript|68 / 70.68|34.8 / 76.36|[广度优先]](./javascript/ac_v1.js)
-2|javascript|60 / 95.09|34.8 / 72.27|[深度优先]](./javascript/ac_v2.js)
+1|javascript|68 / 70.68|34.8 / 76.36|[广度优先](./javascript/ac_v1.js)
+2|javascript|60 / 95.09|34.8 / 72.27|[深度优先](./javascript/ac_v2.js)
 
 来源：力扣（LeetCode）
 

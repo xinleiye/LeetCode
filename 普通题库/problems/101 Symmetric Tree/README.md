@@ -28,7 +28,7 @@ Note:
 
 **#**|**编程语言**|**时间（ms / %）**|**内存（MB / %）**|**代码**
 --|--|--|--|--
-1|javascript|76 / 45.06|36.1 / 13.57|[广度优先]](./javascript/ac_v1.js)
+1|javascript|76 / 45.06|36.1 / 13.57|[广度优先](./javascript/ac_v1.js)
 2|javascript|120 / 5.97|35.4 / 97.49|[递归，深度优先](./javascript/ac_v2.js)
 2|javascript|68 / 83.21|35.5 / 70.15|[广度优先·优化](./javascript/ac_v3.js)
 

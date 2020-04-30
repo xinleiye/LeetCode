@@ -23,7 +23,7 @@ return its level order traversal as:
 
 **#**|**编程语言**|**时间（ms / %）**|**内存（MB / %）**|**代码**
 --|--|--|--|--
-1|javascript|68 / 66.43|34.7 / 95.06|[广度优先]](./javascript/ac_v1.js)
+1|javascript|68 / 66.43|34.7 / 95.06|[广度优先](./javascript/ac_v1.js)
 
 来源：力扣（LeetCode）
 
