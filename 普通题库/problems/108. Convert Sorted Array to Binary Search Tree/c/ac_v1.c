@@ -5,8 +5,6 @@
  *     struct TreeNode *left;
  *     struct TreeNode *right;
  * };
- * Runtime: 12 ms, faster than 81.69% of C online submissions for Convert Sorted Array to Binary Search Tree.
- * Memory Usage: 19.2 MB, less than 68.49% of C online submissions for Convert Sorted Array to Binary Search Tree.
  */
 
 struct TreeNode* bst (int *nums, int start, int end) {
