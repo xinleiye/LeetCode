@@ -9,8 +9,6 @@
  * @param {TreeNode} root
  * @param {number} sum
  * @return {boolean}
- * @Runtime 64 ms, faster than 80.56% of JavaScript online submissions for Path Sum.
- * @Memory_Usage 37.3 MB, less than 52.95% of JavaScript online submissions for Path Sum.
  */
 var hasPathSum = function(root, sum) {
     let res = false;

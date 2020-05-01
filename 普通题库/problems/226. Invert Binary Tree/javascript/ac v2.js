@@ -8,8 +8,6 @@
 /**
  * @param {TreeNode} root
  * @return {TreeNode}
- * @Runtime 52 ms, faster than 82.07% of JavaScript online submissions for Invert Binary Tree.
- * @Memory_Usage 33.8 MB, less than 39.78% of JavaScript online submissions for Invert Binary Tree.
  */
 var invertTree = function(root) {
     let temp;
