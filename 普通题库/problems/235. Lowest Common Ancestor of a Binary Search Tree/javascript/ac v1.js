@@ -10,8 +10,6 @@
  * @param {TreeNode} p
  * @param {TreeNode} q
  * @return {TreeNode}
- * @Runtime 76 ms, faster than 81.92% of JavaScript online submissions for Lowest Common Ancestor of a Binary Search Tree.
- * @Memory_Usage 43.8 MB, less than 20.44% of JavaScript online submissions for Lowest Common Ancestor of a Binary Search Tree.
  */
 var lowestCommonAncestor = function(root, p, q) {
     let parentVal = root.val;
