@@ -8,8 +8,6 @@
 /**
  * @param {TreeNode} root
  * @return {number}
- * @Runtime 56 ms, faster than 94.03% of JavaScript online submissions for Minimum Depth of Binary Tree.
- * @Memory_Usage 37.5 MB, less than 21.99% of JavaScript online submissions for Minimum Depth of Binary Tree.
  */
 var minDepth = function(root) {
     if (!root) {

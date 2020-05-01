@@ -18,7 +18,7 @@ One possible answer is: [0,-3,9,-10,null,5], which represents the following heig
 ```
 
 解答：
-c
+
 **#**|**编程语言**|**时间（ms / %）**|**内存（MB / %）**|**代码**
 --|--|--|--|--
 1|javascript|68 / 72.93|37.7 / 55.59|[递归](./javascricpt/ac_v1.js)

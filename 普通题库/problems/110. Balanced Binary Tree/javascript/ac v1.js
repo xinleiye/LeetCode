@@ -8,8 +8,6 @@
 /**
  * @param {TreeNode} root
  * @return {boolean}
- * @Runtime 84 ms, faster than 17.70% of JavaScript online submissions for Balanced Binary Tree.
- * @Memory_Usage 37.2 MB, less than 99.03% of JavaScript online submissions for Balanced Binary Tree.
  */
 
 var isBalanced = function(root) {
