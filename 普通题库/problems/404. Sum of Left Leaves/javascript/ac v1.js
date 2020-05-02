@@ -8,8 +8,6 @@
 /**
  * @param {TreeNode} root
  * @return {number}
- * @Runtime 76 ms, faster than 10.26% of JavaScript online submissions for Sum of Left Leaves.
- * @Memory_Usage 34.2 MB, less than 77.46% of JavaScript online submissions for Sum of Left Leaves.
  */
 var sumOfLeftLeaves = function(root) {
     let res = 0;
