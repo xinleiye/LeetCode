@@ -2,9 +2,6 @@
  * @param {string} num1
  * @param {string} num2
  * @return {string}
- * @result
- * Runtime: 64 ms, faster than 90.47% of JavaScript online submissions for Add Strings.
- * Memory Usage: 36.4 MB, less than 72.86% of JavaScript online submissions for Add Strings.
  */
 var addStrings = function(num1, num2) {
     let res = "";

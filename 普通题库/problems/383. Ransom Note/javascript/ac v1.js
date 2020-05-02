@@ -2,14 +2,6 @@
  * @param {string} ransomNote
  * @param {string} magazine
  * @return {boolean}
- * @Runtime 92 ms, faster than 36.79% of JavaScript online submissions for Ransom Note.
- * @Memory_Usage 37.2 MB, less than 62.99% of JavaScript online submissions for Ransom Note.
- * @ac_test_case
- * "a" "b"
- * "z" "z"
- * "abcd" "abcde"
- * "aabcd" "abcde"
- * "zeabcd" "abcdezzz"
  */
 var canConstruct = function(ransomNote, magazine) {
     let r, m;

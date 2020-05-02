@@ -2,8 +2,6 @@
  * @param {number[]} nums1
  * @param {number[]} nums2
  * @return {number[]}
- * @Runtime 72 ms, faster than 26.01% of JavaScript online submissions for Intersection of Two Arrays II.
- * @Memory_Usage 34 MB, less than 87.72% of JavaScript online submissions for Intersection of Two Arrays II.
  */
 var intersect = function(nums1, nums2) {
     let pos;
