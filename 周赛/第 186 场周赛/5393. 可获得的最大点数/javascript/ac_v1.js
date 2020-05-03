@@ -1,22 +1,23 @@
 /**
- * @param {number[]} cardPoints
+ * @param {number[]} nums
  * @param {number} k
- * @return {number}
+ * @return {boolean}
  */
-var maxScore = function(cardPoints, k) {
-    let res = 0;
-    let sumK = 0;
-
-    for (let i = 0; i < k; i++) {
-        sumK += cardPoints[i];
+var kLengthApart = function(nums, k) {
+    let pre1 = -1;
+    
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] === 1) {
+            if (pre1 === -1) {
+                pre1 = i;
+            } else {
+                if ((i - pre1 - 1) < k) {
+                    return false;
+                }
+                pre1 = i;
+            }
+        }
     }
-
-    res = Math.max(res, sumK);
-    for (let i = 0; i < k; i++) {
-        sumK -= cardPoints[k - i - 1];
-        sumK += cardPoints[cardPoints.length - 1 - i];
-        res = Math.max(res, sumK);
-    }
-
-    return res;
+    
+    return true;
 };
