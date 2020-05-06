@@ -8,8 +8,6 @@
 /**
  * @param {TreeNode} root
  * @return {number[]}
- * @Runtime 72 ms, faster than 79.93% of JavaScript online submissions for Find Mode in Binary Search Tree.
- * @Memory_Usage 42.8 MB, less than 30.00% of JavaScript online submissions for Find Mode in Binary Search Tree.
  */
 var findMode = function(root) {
     let max = 0;
