@@ -22,4 +22,7 @@
 [257. Binary Tree Paths](../problems/257.%20Binary%20Tree%20Paths)|easy
 [315. Count of Smaller Numbers After Self](../problems/315.%20Count%20of%20Smaller%20Numbers%20After%20Self)|hard
 [404. Sum of Left Leaves](../problems/404.%20Sum%20of%20Left%20Leaves)|easy
+[429. N-ary Tree Level Order Traversal](../problems/429.%20N-ary%20Tree%20Level%20Order%20Traversal)|medium
+[437. Path Sum III](../problems/437.%20Path%20Sum%20III)|easy
+[501. Find Mode in Binary Search Tree](../problems/501.%20Find%20Mode%20in%20Binary%20Search%20Tree)|easy
 [543. Diameter of Binary Tree](../problems/543.%20Diameter%20of%20Binary%20Tree)|easy
