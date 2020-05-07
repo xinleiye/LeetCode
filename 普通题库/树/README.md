@@ -26,3 +26,4 @@
 [437. Path Sum III](../problems/437.%20Path%20Sum%20III)|easy
 [501. Find Mode in Binary Search Tree](../problems/501.%20Find%20Mode%20in%20Binary%20Search%20Tree)|easy
 [543. Diameter of Binary Tree](../problems/543.%20Diameter%20of%20Binary%20Tree)|easy
+[572. Subtree of Another Tree](../problems/572.%20Subtree%20of%20Another%20Tree)|easy
