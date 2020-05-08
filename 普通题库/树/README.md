@@ -22,7 +22,7 @@
 [235. Lowest Common Ancestor of a Binary Search Tree](../problems/235.%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Search%20Tree)|easy
 [236. 二叉树的最近公共祖先](../problems/236.%20二叉树的最近公共祖先)|medium
 [257. Binary Tree Paths](../problems/257.%20Binary%20Tree%20Paths)|easy
-[297. 二叉树的序列化与反序列化](../problems/297.%20二叉树的序列化与反序列化)|easy
+[297. 二叉树的序列化与反序列化](../problems/297.%20二叉树的序列化与反序列化)|hard
 [315. Count of Smaller Numbers After Self](../problems/315.%20Count%20of%20Smaller%20Numbers%20After%20Self)|hard
 [404. Sum of Left Leaves](../problems/404.%20Sum%20of%20Left%20Leaves)|easy
 [429. N-ary Tree Level Order Traversal](../problems/429.%20N-ary%20Tree%20Level%20Order%20Traversal)|medium
