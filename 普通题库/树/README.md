@@ -28,5 +28,8 @@
 [429. N-ary Tree Level Order Traversal](../problems/429.%20N-ary%20Tree%20Level%20Order%20Traversal)|medium
 [437. Path Sum III](../problems/437.%20Path%20Sum%20III)|easy
 [501. Find Mode in Binary Search Tree](../problems/501.%20Find%20Mode%20in%20Binary%20Search%20Tree)|easy
+[530. Minimum Absolute Difference in BST](../problems/530.%20Minimum%20Absolute%20Difference%20in%20BST)|easy
+[538. Convert BST to Greater Tree](../problems/538.%20Convert%20BST%20to%20Greater%20Tree)|easy
 [543. Diameter of Binary Tree](../problems/543.%20Diameter%20of%20Binary%20Tree)|easy
+[559. Maximum Depth of N-ary Tree](../problems/559.%20Maximum%20Depth%20of%20N-ary%20Tree)|easy
 [572. Subtree of Another Tree](../problems/572.%20Subtree%20of%20Another%20Tree)|easy

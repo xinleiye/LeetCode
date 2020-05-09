@@ -8,8 +8,6 @@
 /**
  * @param {TreeNode} root
  * @return {TreeNode}
- * @Runtime 76 ms, faster than 96.95% of JavaScript online submissions for Convert BST to Greater Tree.
- * @Memory_Usage 40.1 MB, less than 75.00% of JavaScript online submissions for Convert BST to Greater Tree.
  */
 var convertBST = function(root) {
     let sum = 0;
