@@ -32,4 +32,7 @@
 [538. Convert BST to Greater Tree](../problems/538.%20Convert%20BST%20to%20Greater%20Tree)|easy
 [543. Diameter of Binary Tree](../problems/543.%20Diameter%20of%20Binary%20Tree)|easy
 [559. Maximum Depth of N-ary Tree](../problems/559.%20Maximum%20Depth%20of%20N-ary%20Tree)|easy
+[563. Binary Tree Tilt](../problems/563.%20Binary%20Tree%20Tilt)|easy
 [572. Subtree of Another Tree](../problems/572.%20Subtree%20of%20Another%20Tree)|easy
+[589. N-ary Tree Preorder Traversal](../problems/589.%20N-ary%20Tree%20Preorder%20Traversal)|easy
+[590. N-ary Tree Postorder Traversal](../problems/590.%20N-ary%20Tree%20Postorder%20Traversal)|easy
