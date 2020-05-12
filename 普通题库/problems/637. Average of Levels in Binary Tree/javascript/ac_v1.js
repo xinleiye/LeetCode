@@ -8,8 +8,6 @@
 /**
  * @param {TreeNode} root
  * @return {number[]}
- * @Runtime 72 ms, faster than 62.59% of JavaScript online submissions for Average of Levels in Binary Tree.
- * @Memory_Usage 38.1 MB, less than 100.00% of JavaScript online submissions for Average of Levels in Binary Tree.
  */
 var averageOfLevels = function(root) {
     let res = [];
