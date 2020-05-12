@@ -36,3 +36,6 @@
 [572. Subtree of Another Tree](../problems/572.%20Subtree%20of%20Another%20Tree)|easy
 [589. N-ary Tree Preorder Traversal](../problems/589.%20N-ary%20Tree%20Preorder%20Traversal)|easy
 [590. N-ary Tree Postorder Traversal](../problems/590.%20N-ary%20Tree%20Postorder%20Traversal)|easy
+[617. Merge Two Binary Trees](../problems/617.%20Merge%20Two%20Binary%20Trees)|easy
+[637. Average of Levels in Binary Tree](../problems/637.%20Average%20of%20Levels%20in%20Binary%20Tree)|easy
+[653. Two Sum IV - Input is a BST](../problems/653.%20Two%20Sum%20IV%20-%20Input%20is%20a%20BST)|easy
