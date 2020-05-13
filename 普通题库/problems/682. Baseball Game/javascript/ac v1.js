@@ -1,8 +1,6 @@
 /**
  * @param {string[]} ops
  * @return {number}
- * @Runtime 60 ms, faster than 68.99% of JavaScript online submissions for Baseball Game.
- * @Memory_Usage 35.5 MB, less than 28.92% of JavaScript online submissions for Baseball Game.
  */
 var calPoints = function(ops) {
     let item;
