@@ -39,3 +39,5 @@
 [617. Merge Two Binary Trees](../problems/617.%20Merge%20Two%20Binary%20Trees)|easy
 [637. Average of Levels in Binary Tree](../problems/637.%20Average%20of%20Levels%20in%20Binary%20Tree)|easy
 [653. Two Sum IV - Input is a BST](../problems/653.%20Two%20Sum%20IV%20-%20Input%20is%20a%20BST)|easy
+[669. Trim a Binary Search Tree](../problems/669.%20Trim%20a%20Binary%20Search%20Tree)|easy
+[671. Second Minimum Node In a Binary Tree](../problems/671.%20Second%20Minimum%20Node%20In%20a%20Binary%20Tree)|easy
