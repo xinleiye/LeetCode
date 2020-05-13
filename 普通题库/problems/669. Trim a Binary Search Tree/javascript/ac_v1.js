@@ -10,8 +10,6 @@
  * @param {number} L
  * @param {number} R
  * @return {TreeNode}
- * @Runtime 76 ms, faster than 25.36% of JavaScript online submissions for Trim a Binary Search Tree.
- * @Memory_Usage 39.5 MB, less than 100.00% of JavaScript online submissions for Trim a Binary Search Tree.
  */
 var trimBST = function(root, L, R) {
     let sorted = [];
