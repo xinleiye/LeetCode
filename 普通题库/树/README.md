@@ -41,3 +41,5 @@
 [653. Two Sum IV - Input is a BST](../problems/653.%20Two%20Sum%20IV%20-%20Input%20is%20a%20BST)|easy
 [669. Trim a Binary Search Tree](../problems/669.%20Trim%20a%20Binary%20Search%20Tree)|easy
 [671. Second Minimum Node In a Binary Tree](../problems/671.%20Second%20Minimum%20Node%20In%20a%20Binary%20Tree)|easy
+[687. Longest Univalue Path](../problems/687.%20Longest%20Univalue%20Path)|easy
+[700. Search in a Binary Search Tree](../problems/700.%20Search%20in%20a%20Binary%20Search%20Tree)|easy
