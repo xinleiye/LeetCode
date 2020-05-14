@@ -11,7 +11,6 @@
  */
 var longestUnivaluePath = function(root) {
     let res = 0;
-    let nodes = [];
     let getHeightVal = function (node, preVal) {
         let lLen = 0;
         let rLen = 0;
