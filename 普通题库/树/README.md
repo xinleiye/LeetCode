@@ -43,3 +43,5 @@
 [671. Second Minimum Node In a Binary Tree](../problems/671.%20Second%20Minimum%20Node%20In%20a%20Binary%20Tree)|easy
 [687. Longest Univalue Path](../problems/687.%20Longest%20Univalue%20Path)|easy
 [700. Search in a Binary Search Tree](../problems/700.%20Search%20in%20a%20Binary%20Search%20Tree)|easy
+[783. Minimum Distance Between BST Nodes](../problems/783.%20Minimum%20Distance%20Between%20BST%20Nodes)|easy
+[872. Leaf-Similar Trees](../problems/872.%20Leaf-Similar%20Trees)|easy
