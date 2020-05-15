@@ -1,9 +1,6 @@
 /**
  * @param {string[]} A
  * @return {number}
- * @result
- * Runtime: 76 ms, faster than 85.40% of JavaScript online submissions for Groups of Special-Equivalent Strings.
- * Memory Usage: 38.3 MB, less than 25.37% of JavaScript online submissions for Groups of Special-Equivalent Strings.
  */
 var numSpecialEquivGroups = function(A) {
     let count = 0;
