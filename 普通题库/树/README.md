@@ -45,3 +45,5 @@
 [700. Search in a Binary Search Tree](../problems/700.%20Search%20in%20a%20Binary%20Search%20Tree)|easy
 [783. Minimum Distance Between BST Nodes](../problems/783.%20Minimum%20Distance%20Between%20BST%20Nodes)|easy
 [872. Leaf-Similar Trees](../problems/872.%20Leaf-Similar%20Trees)|easy
+[897. Increasing Order Search Tree](../problems/897.%20Increasing%20Order%20Search%20Tree)|easy
+[938. Range Sum of BST](../problems/938.%20Range%20Sum%20of%20BST)|easy
