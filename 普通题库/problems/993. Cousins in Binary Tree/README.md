@@ -1,3 +1,5 @@
+# Cousins in Binary Tree
+
 In a binary tree, the root node is at depth 0, and children of each depth k node are at depth k+1.
 
 Two nodes of a binary tree are cousins if they have the same depth, but have different parents.
@@ -6,27 +8,46 @@ We are given the root of a binary tree with unique values, and the values x and 
 
 Return true if and only if the nodes corresponding to the values x and y are cousins.
 
+**Example 1:**
 
-Example 1:
 ![示例1](./eg1.png)
+
 ``` javascript
 Input: root = [1,2,3,4], x = 4, y = 3
 Output: false
 ```
-Example 2:
+
+**Example 2:**
+
 ![示例2](./eg2.png)
+
 ``` javascript
 Input: root = [1,2,3,null,4,null,5], x = 5, y = 4
 Output: true
 ```
-Example 3:
+
+**Example 3:**
+
 ![示例3](./eg3.png)
+
 ``` javascript
 Input: root = [1,2,3,null,4], x = 2, y = 3
 Output: false
 ```
 
-Note:
+**Note:**
 
 - The number of nodes in the tree will be between 2 and 100.
 - Each node has a unique integer value from 1 to 100.
+
+**解答：**
+
+**#**|**编程语言**|**时间（ms / %）**|**内存（MB / %）**|**代码**
+--|--|--|--|--
+1|javascript|60 / 94.29|34.9 / 100|[广度优先](./javascript/ac_v1.js)
+
+来源：力扣（LeetCode）
+
+链接：https://leetcode-cn.com/problems/cousins-in-binary-tree
+
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
