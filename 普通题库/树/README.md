@@ -47,3 +47,6 @@
 [872. Leaf-Similar Trees](../problems/872.%20Leaf-Similar%20Trees)|easy
 [897. Increasing Order Search Tree](../problems/897.%20Increasing%20Order%20Search%20Tree)|easy
 [938. Range Sum of BST](../problems/938.%20Range%20Sum%20of%20BST)|easy
+[965. Univalued Binary Tree](../problems/965.%20Univalued%20Binary%20Tree)|easy
+[993. Cousins in Binary Tree](../problems/993.%20Cousins%20in%20Binary%20Tree)|easy
+[1022. Sum of Root To Leaf Binary Numbers](../problems/1022.%20Sum%20of%20Root%20To%20Leaf%20Binary%20Numbers)|easy
