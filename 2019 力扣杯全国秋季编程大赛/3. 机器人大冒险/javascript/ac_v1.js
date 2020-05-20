@@ -26,6 +26,7 @@ var robot = function(command, obstacles, x, y) {
     for (let step of steps) {
         let difx;
         let dify;
+
         for (let obs of obstacles) {
             difx = obs[0] - step[0];
             dify = obs[1] - step[1];
