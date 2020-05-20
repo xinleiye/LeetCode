@@ -10,3 +10,4 @@
 [893. Groups of Special-Equivalent Strings](../problems/893.%20Groups%20of%20Special-Equivalent%20Strings)|easy
 [937. Reorder Data in Log Files](../problems/937.%20Reorder%20Data%20in%20Log%20Files)|easy
 [1071. Greatest Common Divisor of Strings](../problems/1071.%20Greatest%20Common%20Divisor%20of%20Strings)|easy
+[1371. 每个元音包含偶数次的最长子字符串](../problems/1371.%20每个元音包含偶数次的最长子字符串)|medium
