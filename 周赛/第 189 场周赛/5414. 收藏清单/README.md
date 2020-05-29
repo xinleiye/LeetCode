@@ -43,7 +43,7 @@ favoriteCompanies[3]=["google"] 是 favoriteCompanies[0]=["leetcode","google","f
 
 **#**|**编程语言**|**时间（ms / %）**|**内存（MB / %）**|**代码**
 --|--|--|--|--
-1|javascript|729 / 100|45.1 / 100|[正常方法]](./javascript/ac_v1.js)
+1|javascript|729 / 100|45.1 / 100|[正常方法](./javascript/ac_v1.js)
 
 来源：力扣（LeetCode）
 
