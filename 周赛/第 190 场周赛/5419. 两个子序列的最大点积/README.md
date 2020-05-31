@@ -37,7 +37,6 @@
 
 - 1 <= nums1.length, nums2.length <= 500
 - -1000 <= nums1[i], nums2[i] <= 100
- 
 
 **点积：**
 
