@@ -52,7 +52,7 @@
 
 **#**|**编程语言**|**时间（ms / %）**|**内存（MB / %）**|**代码**
 --|--|--|--|--
-1|javascript|?? / ??|?? / ??|[滑动窗口](./javascript/ac_v1.js)
+1|javascript|192 / 100|49 / 100|[滑动窗口](./javascript/ac_v1.js)
 
 来源：力扣（LeetCode）
 
