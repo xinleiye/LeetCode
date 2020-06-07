@@ -20,7 +20,7 @@
 
 **#**|**编程语言**|**时间（ms / %）**|**内存（MB / %）**|**代码**
 --|--|--|--|--
-1|javascript|?? / 100|?? / 100|[??](./javascript/ac_v1.js)
+1|javascript|96 / 77.25|43 / 20|[正常方法](./javascript/ac_v1.js)
 
 来源：力扣（LeetCode）
 
