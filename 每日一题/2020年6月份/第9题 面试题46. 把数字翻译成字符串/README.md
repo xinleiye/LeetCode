@@ -18,7 +18,7 @@
 
 **#**|**编程语言**|**时间（ms / %）**|**内存（MB / %）**|**代码**
 --|--|--|--|--
-1|javascript|?? / ??|?? / ??|[动态规划](./javascript/ac_v1.js)
+1|typescript|68 / 100|32.2 / 100|[动态规划](./typescript/ac_v1.js)
 
 来源：力扣（LeetCode）
 
