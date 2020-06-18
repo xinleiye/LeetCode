@@ -23,7 +23,7 @@
 
 **#**|**编程语言**|**时间（ms / %）**|**内存（MB / %）**|**代码**
 --|--|--|--|--
-1|javascript|?? / ??|?? / ??|[??](./javascript/ac_v1.js)
+1|javascript|108 / 30.34|40 / 100|[一次枚举](./javascript/ac_v1.js)
 
 来源：力扣（LeetCode）
 
