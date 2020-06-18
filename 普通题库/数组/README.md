@@ -9,3 +9,4 @@
 [509. Fibonacci Number](../problems/509.%20Fibonacci%20Number)|easy
 [560. 和为K的子数组](../problems/560.%20和为K的子数组)|medium
 [974. 和可被 K 整除的子数组](../problems/974.%20和可被%20K%20整除的子数组)|medium
+[1014. 最佳观光组合](../problems/1014.%20最佳观光组合)|medium
