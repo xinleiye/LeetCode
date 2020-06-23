@@ -16,6 +16,7 @@
 [112. Path Sum](../problems/112.%20Path%20Sum)|easy
 [116. 填充每个节点的下一个右侧节点指针](../problems/116.%20填充每个节点的下一个右侧节点指针)|medium
 [117. 填充每个节点的下一个右侧节点指针 II](../problems/116.%20填充每个节点的下一个右侧节点指针%20II)|medium
+[124. 二叉树中的最大路径和](../problems/124.%20二叉树中的最大路径和)|hard
 [199. 二叉树的右视图](../problems/199.%20二叉树的右视图)|medium
 [208. 实现 Trie (前缀树)](../problems/208.%20实现%20Trie%20(前缀树))|medium
 [226. Invert Binary Tree](../problems/226.%20Invert%20Binary%20Tree)|easy
