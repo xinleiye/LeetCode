@@ -42,7 +42,6 @@ var generateTrees = function(n) {
 
     return createTree(1, n);
 };
-
 function TreeNode (val) {
     this.val = val;
     this.left = null;

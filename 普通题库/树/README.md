@@ -2,6 +2,7 @@
 
 **名称**|**难度**
 --------|--------
+[95. 不同的二叉搜索树 II](../problems/95.%20不同的二叉搜索树%20II)|medium
 [98. 验证二叉搜索树](../problems/98.%20验证二叉搜索树)|medium
 [100. Same Tree](../problems/100.%20Same%20Tree)|easy
 [101. Symmetric Tree](../problems/101.%20Symmetric%20Tree)|easy
