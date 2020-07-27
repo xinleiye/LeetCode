@@ -9,7 +9,7 @@ var longestIncreasingPath = function(matrix) {
     // 上 右 下 左
     let directions = [[-1, 0], [0, 1], [1, 0], [0, -1]];
     let pathLen = new Array(maxRow);
-    let dfs = (aRow, aCol, preVal) => {
+    let dfs = (aRow, aCol) => {
         let len = 1;
 
         if (pathLen[aRow][aCol] > 0) {
@@ -25,7 +25,7 @@ var longestIncreasingPath = function(matrix) {
             }
 
             if (matrix[aRow][aCol] < matrix[row][col]) {
-                len = Math.max(len, dfs(row, col, matrix[row][col]) + 1);
+                len = Math.max(len, dfs(row, col) + 1);
             }
         }
 
@@ -46,7 +46,7 @@ var longestIncreasingPath = function(matrix) {
 
     for (let i = 0; i < maxRow; i++) {
         for (let j = 0; j < maxCol; j++) {
-            res = Math.max(res, dfs(i, j, matrix[i][j]));
+            res = Math.max(res, dfs(i, j));
         }
     }
 
