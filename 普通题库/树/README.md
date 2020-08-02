@@ -16,6 +16,7 @@
 [111. Minimum Depth of Binary Tree](../problems/111.%20Minimum%20Depth%20of%20Binary%20Tree)|easy
 [112. Path Sum](../problems/112.%20Path%20Sum)|easy
 [116. 填充每个节点的下一个右侧节点指针](../problems/116.%20填充每个节点的下一个右侧节点指针)|medium
+[114. 二叉树展开为链表](../problems/114.%20二叉树展开为链表)|medium
 [117. 填充每个节点的下一个右侧节点指针 II](../problems/116.%20填充每个节点的下一个右侧节点指针%20II)|medium
 [124. 二叉树中的最大路径和](../problems/124.%20二叉树中的最大路径和)|hard
 [199. 二叉树的右视图](../problems/199.%20二叉树的右视图)|medium
