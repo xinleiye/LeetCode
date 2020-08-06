@@ -11,11 +11,11 @@ class TrieTree {
     constructor () {
         this.root = new TrieNode();
     }
-    insert (s) {
+    insert (str) {
         let currentNode = this.root;
 
-        for (let i = 0; i < s.length; i--) {
-            let index = s.charCodeAt(i) - 97;
+        for (let i = 0; i < str.length; i++) {
+            let index = str.charCodeAt(i) - 97;
 
             if (currentNode.next[index] === null) {
                 currentNode.next[index] = new TrieNode();
@@ -23,5 +23,19 @@ class TrieTree {
             currentNode = currentNode.next[index];
         }
         currentNode.isEnd = true;
+    }
+    find (str) {
+        let currentNode = this.root;
+
+        for (let i = 0; i < str.length; i++) {
+            let index = str.charCodeAt(i) - 97;
+
+            if (currentNode.next[index] === null) {
+                return false;
+            }
+            currentNode = currentNode.next[index];
+        }
+
+        return currentNode.isEnd;
     }
 }
