@@ -1,27 +1,31 @@
 /**
- * @param {number[]} candidates
- * @param {number} target
- * @return {number[][]}
+ * @param {number} n
+ * @return {string}
  */
-var combinationSum = function(candidates, target) {
-    let res = [];
-    let numStack = [];
-    let dfs = (start, rest) => {
-        if (rest < 0) {
-            return;
-        }
-        if (rest === 0) {
-            res.push(numStack.slice());
-            return;
-        }
-        for (let i = start; i < candidates.length; i++) {
-            numStack.push(candidates[i]);
-            dfs(i, rest - candidates[i]);
-            numStack.pop(candidates[i]);
-        }
-    };
+var countAndSay = function(n) {
+    let res = "1";
+    let index = 1;
 
-    dfs(0, target);
+    while (index < n) {
+        let preChar = res[0];
+        let currentStr = "";
+        let count = 1;
+
+        for (let i = 1; i < res.length; i++) {
+            if (res[i] === preChar) {
+                count++;
+            } else {
+                currentStr += count + preChar;
+                preChar = res[i];
+                count = 1;
+            }
+        }
+        if (count > 0) {
+            currentStr += count + preChar;
+        }
+        res = currentStr;
+        index++;
+    }
 
     return res;
 };
