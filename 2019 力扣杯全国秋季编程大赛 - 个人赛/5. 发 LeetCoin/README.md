@@ -6,7 +6,6 @@
 
 - 团队只有一个负责人，编号为1。除了该负责人外，每个人有且仅有一个领导（负责人没有领导）；
 - 不存在循环管理的情况，如A管理B，B管理C，C管理A。
- 
 
 力扣想进行的操作有以下三种：
 
@@ -19,9 +18,10 @@
 - N表示团队成员的个数（编号为1～N，负责人为1）；
 - leadership是大小为(N - 1) * 2的二维数组，其中每个元素[a, b]代表b是a的下属；
 - operations是一个长度为Q的二维数组，代表以时间排序的操作，格式如下：
-1. operations[i][0] = 1: 代表第一种操作，operations[i][1]代表成员的编号，operations[i][2]代表LeetCoin的数量；
-2. operations[i][0] = 2: 代表第二种操作，operations[i][1]代表成员的编号，operations[i][2]代表LeetCoin的数量；
-3. operations[i][0] = 3: 代表第三种操作，operations[i][1]代表成员的编号；
+
+    1. operations[i][0] = 1: 代表第一种操作，operations[i][1]代表成员的编号，operations[i][2]代表LeetCoin的数量；
+    2. operations[i][0] = 2: 代表第二种操作，operations[i][1]代表成员的编号，operations[i][2]代表LeetCoin的数量；
+    3. operations[i][0] = 3: 代表第三种操作，operations[i][1]代表成员的编号；
 
 **输出：**
 
