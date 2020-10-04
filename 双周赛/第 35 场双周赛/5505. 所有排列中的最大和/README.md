@@ -51,7 +51,7 @@ requests[1] -> nums[0] + nums[1] = 3 + 5  = 8
 **#**|**编程语言**|**时间（ms / %）**|**内存（MB / %）**|**代码**
 --|--|--|--|--
 1|javascript|5364 / 100|60 / 100|[朴素方法](./javascript/ac_v1.js)
-1|javascript|272 / 100|60.4 / 76.64|[差分法统计区间](./javascript/ac_v1.js)
+2|javascript|272 / 100|60.4 / 76.64|[差分法统计区间](./javascript/ac_v1.js)
 
 来源：力扣（LeetCode）
 
