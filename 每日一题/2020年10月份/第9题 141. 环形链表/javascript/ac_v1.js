@@ -1,17 +1,31 @@
 /**
- * @param {character[]} s
- * @return {void} Do not return anything, modify s in-place instead.
+ * Definition for singly-linked list.
+ * function ListNode(val) {
+ *     this.val = val;
+ *     this.next = null;
+ * }
  */
-var reverseString = function(s) {
-    let left = 0;
-    let right = s.length - 1;
 
-    while (left < right) {
-        let tmp = s[left];
+/**
+ * @param {ListNode} head
+ * @return {boolean}
+ */
+var hasCycle = function(head) {
+    let slow = head;
+    let fast = head ? head.next : null;
 
-        s[left] = s[right];
-        s[right] = tmp;
-        left++;
-        right--;
+    while (slow && fast) {
+        if (slow === fast) {
+            return true;
+        }
+        slow = slow.next;
+        fast = fast.next;
+        if (fast) {
+            fast = fast.next;
+        } else {
+            break;
+        }
     }
+
+    return false;
 };
