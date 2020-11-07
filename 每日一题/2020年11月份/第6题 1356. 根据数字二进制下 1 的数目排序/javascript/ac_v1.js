@@ -3,7 +3,6 @@
  * @return {number[]}
  */
 var sortByBits = function(arr) {
-    let arrMap = new Map();
     let get1Count = (num) => {
         let count = 0;
 
