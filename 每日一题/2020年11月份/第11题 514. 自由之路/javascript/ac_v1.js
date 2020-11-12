@@ -4,6 +4,7 @@
  * @return {number}
  */
 var findRotateSteps = function(ring, key) {
+    let res = Number.MAX_SAFE_INTEGER;
     let steps = new Array(key.length);
     let charMap = new Map();
 
@@ -18,17 +19,22 @@ var findRotateSteps = function(ring, key) {
             charMap.set(ring[i], [i]);
         }
     }
-    console.log(charMap);
+
     for (let item of charMap.get(key[0])) {
-        console.log(item);
-        steps[0][i] = Math.min(item, ring.length - item) + 1;
+        steps[0][item] = Math.min(item, ring.length - item) + 1;
     }
 
     for (let i = 1; i < key.length; i++) {
         for (let index of charMap.get(key[i])) {
             for (let preIndex of charMap.get(key[i - 1])) {
-                steps[i][index] = Math.min(steps[i][index], steps[i - 1][preIndex] + )
+                steps[i][index] = Math.min(steps[i][index], steps[i - 1][preIndex] + Math.min(Math.abs(index - preIndex), ring.length - Math.abs(index - preIndex)) + 1);
             }
         }
     }
+
+    for (let item of steps[key.length - 1]) {
+        res = Math.min(res, item);
+    }
+
+    return res;
 };
