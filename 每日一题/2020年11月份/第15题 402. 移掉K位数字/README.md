@@ -35,7 +35,7 @@
 
 **#**|**编程语言**|**时间（ms / %）**|**内存（MB / %）**|**代码**
 --|--|--|--|--
-1|javascript|?? / ??|?? / ??|[??](./javascript/ac_v1.js)
+1|javascript|88 / 89.81|39.9 / 35.26|[单调栈](./javascript/ac_v1.js)
 
 来源：力扣（LeetCode）
 
