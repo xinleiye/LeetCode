@@ -57,7 +57,8 @@
 
 **#**|**编程语言**|**时间（ms / %）**|**内存（MB / %）**|**代码**
 --|--|--|--|--
-1|javascript|100 / 25.55|40.2 / 20.30|[贪心](./javascript/ac_v1.js)
+1|javascript|100 / 25.55|40.2 / 20.30|[贪心&哈希](./javascript/ac_v1.js)
+2|javascript|76 / 96.90|39.7 / 59.78|[贪心](./javascript/ac_v2.js)
 
 来源：力扣（LeetCode）
 
