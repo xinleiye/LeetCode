@@ -34,7 +34,7 @@
 - apples.length == n
 - days.length == n
 - 1 <= n <= 2 * 1e4
-- 0 <= apples[i], days[i] <= 2 * 104
+- 0 <= apples[i], days[i] <= 2 * 1e4
 - 只有在 apples[i] = 0 时，days[i] = 0 才成立
 
 **解答：**
