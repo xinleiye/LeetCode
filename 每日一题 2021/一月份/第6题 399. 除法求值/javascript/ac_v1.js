@@ -1,23 +1,9 @@
 /**
- * @param {string} s
- * @return {number[][]}
+ * @param {string[][]} equations
+ * @param {number[]} values
+ * @param {string[][]} queries
+ * @return {number[]}
  */
-var largeGroupPositions = function(s) {
-    const res = [];
-    let start = 0;
-    const length = s.length;
+var calcEquation = function(equations, values, queries) {
 
-    while (start < length) {
-        let end = start + 1;
-
-        while (end < length && s[end] === s[start]) {
-            end++;
-        }
-        if (end - start >= 3) {
-            res.push([start, end - 1]);
-        }
-        start = end;
-    }
-
-    return res;
 };
