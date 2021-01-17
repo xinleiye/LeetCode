@@ -29,22 +29,6 @@
 - -10^4 <= coordinates[i][0], coordinates[i][1] <= 10^4
 - coordinates 中不含重复的点
 
-来源：力扣（LeetCode）
-链接：https://leetcode-cn.com/problems/check-if-it-is-a-straight-line
-著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
-
-**提示：**
-
-- m == grid.length
-- n == grid[i].length
-- 1 <= m, n <= 200
-- grid[i][j] 为 0 或 1
-- 1 <= hits.length <= 4 * 1e4
-- hits[i].length == 2
-- 0 <= xi <= m - 1
-- 0 <= yi <= n - 1
-- 所有 (xi, yi) 互不相同
-
 **解答：**
 
 **#**|**编程语言**|**时间（ms / %）**|**内存（MB / %）**|**代码**
@@ -53,6 +37,6 @@
 
 来源：力扣（LeetCode）
 
-链接：https://leetcode-cn.com/problems/bricks-falling-when-hit
+链接：https://leetcode-cn.com/problems/check-if-it-is-a-straight-line
 
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
