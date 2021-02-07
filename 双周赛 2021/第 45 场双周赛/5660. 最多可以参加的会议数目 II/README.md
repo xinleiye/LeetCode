@@ -39,10 +39,10 @@
 
 **提示：**
 
-1 <= k <= events.length
-1 <= k * events.length <= 1e6
-1 <= startDayi <= endDayi <= 1e9
-1 <= valuei <= 1e6
+- 1 <= k <= events.length
+- 1 <= k * events.length <= 1e6
+- 1 <= startDayi <= endDayi <= 1e9
+- 1 <= valuei <= 1e6
 
 **解答：**
 
