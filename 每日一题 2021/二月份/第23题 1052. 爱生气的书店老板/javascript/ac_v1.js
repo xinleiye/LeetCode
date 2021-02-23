@@ -1,33 +1,42 @@
 /**
- * @param {number[][]} matrix
- * @return {boolean}
+ * @param {number[]} customers
+ * @param {number[]} grumpy
+ * @param {number} X
+ * @return {number}
  */
-var isToeplitzMatrix = function(matrix) {
-    const maxRow = matrix.length;
-    const maxCol = matrix[0].length;
-    const isSame = (startRow, startCol) => {
-        const base = matrix[startRow++][startCol++];
+var maxSatisfied = function(customers, grumpy, X) {
+    let res = 0;
+    let left = 0;
+    let right = 0;
+    let customerNS = 0;
+    let maxCustomerNS = 0;
+    const length = customers.length;
 
-        while (startRow < maxRow && startCol < maxCol) {
-            if (matrix[startRow++][startCol++] !== base) {
-                return false;
-            }
+    customers.forEach((val, index) => {
+        if (grumpy[index] === 0) {
+            res += val;
         }
+    });
 
-        return true;
-    };
-
-    for (let i = 0; i < maxRow; i++) {
-        if (!isSame(i, 0)) {
-            return false;
+    while (right < X) {
+        if (grumpy[right] === 1) {
+            customerNS += customers[right];
         }
+        right++;
     }
 
-    for (let i = 1; i < maxCol; i++) {
-        if (!isSame(0, i)) {
-            return false;
+    maxCustomerNS = customerNS;
+    while (right < length) {
+        if (grumpy[right] === 1) {
+            customerNS += customers[right];
         }
+        if (grumpy[left] === 1) {
+            customerNS -= customers[left];
+        }
+        maxCustomerNS = Math.max(maxCustomerNS, customerNS);
+        right++;
+        left++;
     }
 
-    return true;
+    return res + maxCustomerNS;
 };
