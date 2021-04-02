@@ -1,38 +1,25 @@
 /**
- * @param {number} N
+ * @param {number[]} height
  * @return {number}
  */
- var clumsy = function(N) {
+ var trap = function(height) {
     let res = 0;
     const stack = [];
-    // 0=>*; 1=>/; 2=>+; 3=>-
-    let opIndex = 0;
+    const length = height.length;
 
-    stack[0] = N;
-    N--;
-    while (N) {
-        let num = stack.pop();
-        const opType = opIndex % 4;
+    for (let i = 0; i < length; i++) {
+        while (stack.length > 0 && height[i] > height[stack[stack.length - 1]]) {
+            let top = stack.pop();
 
-        if (opType === 0) {
-            stack.push(num * N);
-        } else if (opType === 1) {
-            stack.push(Math.floor(num / N));
-        } else {
-            stack.push(num, N);
+            if (stack.length > 0) {
+                let left = stack[stack.length - 1];
+                let currentWidth = i - left - 1;
+                let currentHeight = Math.min(height[i], height[left]) - height[top];
+
+                res += currentWidth * currentHeight;
+            }
         }
-
-        N--;
-        opIndex++;
-    }
-
-    res = stack[0];
-    for (let i = 1; i < stack.length; i++) {
-        if (i % 2) {
-            res += stack[i];
-        } else {
-            res -= stack[i];
-        }
+        stack.push(i);
     }
 
     return res;
