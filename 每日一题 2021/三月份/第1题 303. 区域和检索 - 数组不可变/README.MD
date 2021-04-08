@@ -28,7 +28,7 @@ numArray.sumRange(0, 5); // return -3 ((-2) + 0 + 3 + (-5) + 2 + (-1))
 - 0 <= nums.length <= 1e4
 - -1e5 <= nums[i] <= 1e5
 - 0 <= i <= j < nums.length
-- 最多调用 104 次 sumRange 方法
+- 最多调用 1e4 次 sumRange 方法
 
 **解答：**
 
