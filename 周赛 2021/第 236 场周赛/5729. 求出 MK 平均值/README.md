@@ -51,7 +51,7 @@ obj.calculateMKAverage(); // 最后 3 个元素为 [5,5,5]
 
 **#**|**编程语言**|**时间（ms / %）**|**内存（MB / %）**|**代码**
 --|--|--|--|--
-1|javascript|?? / 100|?? / 100|[??](./javascript/ac_v1.js)
+1|javascript|3880 / 85.34|80.2 / 82.93|[朴素方法](./javascript/ac_v1.js)
 
 来源：力扣（LeetCode）
 
