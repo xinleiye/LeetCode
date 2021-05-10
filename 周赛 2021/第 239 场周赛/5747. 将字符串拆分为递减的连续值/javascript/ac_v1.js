@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {boolean}
  */
- var splitString = function(s) {
+var splitString = function(s) {
     let res = false;
     const length = s.length;
     const dfs = (preNum, preIndex) => {

@@ -4,7 +4,7 @@
  * @param {number} start
  * @return {number}
  */
- var getMinDistance = function(nums, target, start) {
+var getMinDistance = function(nums, target, start) {
     let res = 1000;
     
     nums.forEach((val, index) => {
