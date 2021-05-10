@@ -3,6 +3,6 @@
  * @param {number[]} queries
  * @return {number[]}
  */
- var minInterval = function(intervals, queries) {
+var minInterval = function(intervals, queries) {
 
 };
