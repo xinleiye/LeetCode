@@ -3,6 +3,6 @@
  * @param {number} k
  * @return {number}
  */
- var getMinSwaps = function(num, k) {
+var getMinSwaps = function(num, k) {
 
 };
