@@ -2,7 +2,7 @@
  * @param {number[]} encoded
  * @return {number[]}
  */
- var decode = function(encoded) {
+var decode = function(encoded) {
     const length = encoded.length + 1;
     const res = new Array(encoded.length + 1);
     let total = 0;
