@@ -4,7 +4,7 @@
  * @param {number} k
  * @return {number}
  */
- var minDays = function(bloomDay, m, k) {
+var minDays = function(bloomDay, m, k) {
     let res = -1;
     let bloomed = new Array(bloomDay.length).fill(false);
     let isM = (day, m) => {

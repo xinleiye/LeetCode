@@ -12,7 +12,7 @@
  * @param {number} id
  * @return {number}
  */
- var GetImportance = function(employees, id) {
+var GetImportance = function(employees, id) {
     let res = 0;
     const employeeMap = new Map();
     const dfs = (employeeId) => {
