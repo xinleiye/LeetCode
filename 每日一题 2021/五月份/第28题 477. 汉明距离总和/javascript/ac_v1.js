@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
- var totalHammingDistance = function(nums) {
+var totalHammingDistance = function(nums) {
     let res = 0;
     const bitCount = new Array(32).fill(0);
     const total = nums.length;
