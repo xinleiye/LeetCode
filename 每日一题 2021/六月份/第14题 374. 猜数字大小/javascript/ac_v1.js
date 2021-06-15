@@ -11,7 +11,7 @@
  * @param {number} n
  * @return {number}
  */
- var guessNumber = function(n) {
+var guessNumber = function(n) {
     let left = 1;
     let right = n;
 
