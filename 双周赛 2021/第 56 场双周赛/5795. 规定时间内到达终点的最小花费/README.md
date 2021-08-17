@@ -45,7 +45,7 @@
 - n - 1 <= edges.length <= 1000
 - 0 <= xi, yi <= n - 1
 - 1 <= timei <= 1000
-- 1 <= passingFees[j] <= 1000 
+- 1 <= passingFees[j] <= 1000
 - 图中两个节点之间可能有多条路径。
 - 图中不含有自环。
 
