@@ -1,26 +1,34 @@
 /**
  * @param {number} n
+ * @param {number[][]} flights
+ * @param {number} src
+ * @param {number} dst
+ * @param {number} k
  * @return {number}
  */
-var getMaximumGenerated = function(n) {
-    let res = 0;
-    let arr = new Array(n + 1).fill(0);
+var findCheapestPrice = function(n, flights, src, dst, k) {
+    const MaxCost = n * 1e4 + 1;
+    let res = MaxCost;
+    const costMap = new Array(k + 2);
 
-    if (n < 2) {
-        return n;
+    for (let i = 0; i < k + 2; i++) {
+        costMap[i] = new Array(n).fill(MaxCost);
     }
-    arr[0] = 0;
-    arr[1] = 1;
-    for (let i = 2; i <= n; i++) {
-        let base = Math.floor(i / 2);
 
-        if (i % 2 === 1) {
-            arr[i] = arr[base] + arr[base + 1];
-        } else {
-            arr[i] = arr[base];
+    costMap[0][src] = 0;
+    for (let i = 1; i <= k + 1; i++) {
+        for (let item of flights) {
+            const start = item[0];
+            const end = item[1];
+            const cost = item[2];
+
+            costMap[i][end] = Math.min(costMap[i][end], costMap[i - 1][start] + cost);
         }
-        res = Math.max(res, arr[i]);
     }
-    
-    return res;
+
+    for (let i = 1; i <= k + 1; i++) {
+        res = Math.min(res, costMap[i][dst]);
+    }
+
+    return res === MaxCost ? -1 : res;
 };
