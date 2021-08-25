@@ -54,7 +54,7 @@ src = 0, dst = 2, k = 0
 
 **#**|**编程语言**|**时间（ms / %）**|**内存（MB / %）**|**代码**
 --|--|--|--|--
-1|javascript|?? / ??|??  / ??|[动态规划](./javascript/ac_v1.js)
+1|javascript|84 / 79.66|40.7  / 61.02|[动态规划](./javascript/ac_v1.js)
 
 来源：力扣（LeetCode）
 
