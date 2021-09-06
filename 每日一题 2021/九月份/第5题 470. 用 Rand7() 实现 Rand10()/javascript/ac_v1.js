@@ -1,20 +1,8 @@
 /**
- * @param {number} n
- * @return {number}
+ * The rand7() API is already defined for you.
+ * var rand7 = function() {}
+ * @return {number} a random integer in the range 1 to 7
  */
-var fib = function(n) {
-    let n1 = 0;
-    let n2 = 1;
-    let index = 1;
-    const MOD = 1e9 + 7;
-
-    while (index <= n) {
-        const n = (n1 + n2) % MOD;
-
-        n1 = n2;
-        n2 = n;
-        index++;
-    }
-
-    return n1;
+var rand10 = function() {
+    
 };
