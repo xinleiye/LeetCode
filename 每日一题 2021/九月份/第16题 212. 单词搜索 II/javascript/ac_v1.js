@@ -1,47 +1,99 @@
 /**
- * @param {number[]} nums
- * @return {number}
+ * @param {character[][]} board
+ * @param {string[]} words
+ * @return {string[]}
  */
-var findPeakElement = function(nums) {
-    let res = 0;
-    let left = 0;
-    let right = nums.length - 1;
+var findWords = function(board, words) {
+    const res = [];
+    const dir = [[-1, 0], [0, 1], [1, 0], [0, -1]];
+    const visited = new Array(board.length);
+    const maxRow = board.length;
+    const maxCol = board[0].length;
+    const tree = new TrieTree();
 
-    while (left <= right) {
-        const mid = (left + right) >>> 1;
+    const dfsSearch = (node, row, col, word) => {
+        const ch = board[row][col];
+        const index = ch.charCodeAt(0) - 97;
 
-        if (compare(nums, mid - 1, mid) < 0 && compare(nums, mid, mid + 1) > 0) {
-            res = mid;
-            break;
+        if (!node.chars[index]) {
+            return;
         }
-        if (compare(nums, mid, mid + 1) < 0) {
-            left = mid + 1;
-        } else {
-            right = mid - 1;
+        word.push(ch);
+        visited[row][col] = true;
+        node = node.chars[index];
+        if (node.isEnd) {
+            res.push(word.join(""));
+            node.isEnd = false;
+        }
+        for (let i = 0; i < 4; i++) {
+            const aRow = row + dir[i][0];
+            const aCol = col + dir[i][1];
+
+            if (aRow >= 0 && aRow < maxRow && aCol >= 0 && aCol < maxCol) {
+                if (!visited[aRow][aCol]) {
+                    dfsSearch(node, aRow, aCol, word);
+                }
+            }
+        }
+        word.pop();
+        visited[row][col] = false;
+    };
+
+    for (let i = 0; i < maxRow; i++) {
+        visited[i] = new Array(maxCol).fill(false);
+    }
+    words.forEach(word => {
+        tree.insert(word);
+    });
+    for (let i = 0; i < maxRow; i++) {
+        for (let j = 0; j < maxCol; j++) {
+            dfsSearch(tree.root, i, j, []);
         }
     }
 
     return res;
 };
 
-function getEle (arr, index) {
-    if (index === -1 || index === arr.length) {
-        return [0, 0];
-    }
 
-    return [1, arr[index]];
+/**
+ * 只包含小写字母的前缀树
+ */
+class TrieNode {
+    constructor () {
+        this.chars =  new Array(26).fill(null);
+        this.isEnd = false;
+    }
 }
-
-function compare (arr, index1, index2) {
-    const ele1 = getEle(arr, index1);
-    const ele2 = getEle(arr, index2);
-
-    if (ele1[0] !== ele2[0]) {
-        return ele1[0] > ele2[0] ? 1 : -1;
+class TrieTree {
+    constructor () {
+        this.root = new TrieNode();
     }
-    if (ele1[1] === ele2[1]) {
-        return 0;
-    }
+    insert (str) {
+        let currentNode = this.root;
 
-    return ele1[1] > ele2[1] ? 1 : -1;
+        for (let i = 0; i < str.length; i++) {
+            let index = str.charCodeAt(i) - 97;
+
+            if (currentNode.chars[index] === null) {
+                currentNode.chars[index] = new TrieNode();
+            }
+            currentNode = currentNode.chars[index];
+        }
+
+        currentNode.isEnd = true;
+    }
+    find (str) {
+        let currentNode = this.root;
+
+        for (let i = 0; i < str.length; i++) {
+            let index = str.charCodeAt(i) - 97;
+
+            if (currentNode.chars[index] === null) {
+                return false;
+            }
+            currentNode = currentNode.chars[index];
+        }
+
+        return currentNode.isEnd;
+    }
 }
