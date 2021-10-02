@@ -2,7 +2,7 @@
  * @param {number[]} machines
  * @return {number}
  */
- var findMinMoves = function(machines) {
+var findMinMoves = function(machines) {
     let res = 0;
     const total = machines.reduce((pre, val) =>{
         return pre + val;

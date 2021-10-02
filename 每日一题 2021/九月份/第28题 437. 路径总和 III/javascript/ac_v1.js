@@ -11,7 +11,7 @@
  * @param {number} targetSum
  * @return {number}
  */
- var pathSum = function(root, targetSum) {
+var pathSum = function(root, targetSum) {
     let res = 0;
 
     if (!root) {
