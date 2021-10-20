@@ -39,7 +39,7 @@ wordDictionary.search("b.."); // return True
 
 **#**|**编程语言**|**时间（ms / %）**|**内存（MB / %）**|**代码**
 --|--|--|--|--
-1|javascript|192 / 69.43|57.8/ 20.39|[字典树](./javascript/ac_v1.js)
+1|javascript|192 / 69.43|57.8 / 20.39|[字典树](./javascript/ac_v1.js)
 
 来源：力扣（LeetCode）
 
