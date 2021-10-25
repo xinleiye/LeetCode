@@ -32,14 +32,14 @@
 
 **提示：**
 
-- n == price.length
-- n == needs.length
-- 1 <= n <= 6
-- 0 <= price[i] <= 10
-- 0 <= needs[i] <= 10
-- 1 <= special.length <= 100
-- special[i].length == n + 1
-- 0 <= special[i][j] <= 50
+- `n == price.length`
+- `n == needs.length`
+- `1 <= n <= 6`
+- `0 <= price[i] <= 10`
+- `0 <= needs[i] <= 10`
+- `1 <= special.length <= 100`
+- `special[i].length == n + 1`
+- `0 <= special[i][j] <= 50`
 
 **解答：**
 
