@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
- var minimumDeletions = function(nums) {
+var minimumDeletions = function(nums) {
     const total = nums.length;
     let minIndex = 0;
     let maxIndex = 0;
