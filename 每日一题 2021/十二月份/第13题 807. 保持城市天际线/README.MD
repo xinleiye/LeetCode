@@ -43,7 +43,7 @@ gridNew = [ [8, 4, 8, 7],
 
 **#**|**编程语言**|**时间（ms / %）**|**内存（MB / %）**|**代码**
 --|--|--|--|--
-1|javascript|?? / ??|?? / ??|[贪心](./javascript/ac_v2.js)
+1|javascript|88 / 12.36|39.4 / 86.52|[贪心](./javascript/ac_v2.js)
 
 来源：力扣（LeetCode）
 
