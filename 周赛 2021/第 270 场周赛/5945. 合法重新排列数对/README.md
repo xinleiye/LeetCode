@@ -54,7 +54,7 @@ end1 = 1 == 1 = start2
 
 **#**|**编程语言**|**时间（ms / %）**|**内存（MB / %）**|**代码**
 --|--|--|--|--
-1|javascript|??  / 100|?? / 100|[??](./javascript/ac_v1.js)
+1|javascript|?? / 100|?? / 100|[??](./javascript/ac_v1.js)
 
 来源：力扣（LeetCode）
 
