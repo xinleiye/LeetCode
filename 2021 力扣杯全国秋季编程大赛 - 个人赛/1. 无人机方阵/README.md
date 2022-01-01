@@ -5,7 +5,7 @@
 - 调整无人机的位置布局
 - 切换无人机展示的灯光颜色
 
-给定两个大小均为 N*M 的二维数组 source 和 target 表示无人机方阵表演的两种颜色图案，由于无人机切换灯光颜色的耗能很大，请返回从 source 到 target 最少需要多少架无人机切换灯光颜色。
+给定两个大小均为 `N*M` 的二维数组 `source` 和 `target` 表示无人机方阵表演的两种颜色图案，由于无人机切换灯光颜色的耗能很大，请返回从 `source` 到 `target` 最少需要多少架无人机切换灯光颜色。
 
 **注意**： 调整无人机的位置布局时无人机的位置可以随意变动。
 
@@ -39,10 +39,10 @@
 
 **提示：**
 
-- n == source.length == target.length
-- m == source[i].length == target[i].length
-- 1 <= n, m <=100
-- 1 <= source[i][j], target[i][j] <=10^4
+- `n == source.length == target.length`
+- `m == source[i].length == target[i].length`
+- `1 <= n, m <=100`
+- `1 <= source[i][j], target[i][j] <=10^4`
 
 **解答：**
 
@@ -52,6 +52,6 @@
 
 来源：力扣（LeetCode）
 
-链接：https://leetcode-cn.com/problems/guess-numbers
+链接：https://leetcode-cn.com/problems/0jQkd0/
 
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
