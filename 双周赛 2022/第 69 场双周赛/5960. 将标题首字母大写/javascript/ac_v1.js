@@ -1,20 +1,27 @@
 /**
- * @param {string} title
- * @return {string}
+ * @param {number[][]} matrix
+ * @return {boolean}
  */
-var capitalizeTitle = function(title) {
-    const res = [];
-    const words = title.split(" ");
+var checkValid = function(matrix) {
+    const n = matrix.length;
 
-    words.forEach(word => {
-        const lower = word.toLowerCase();
+    for (let i = 0; i < n; i++) {
+        const buff = new Array(n + 1).fill(0);
 
-        if (word.length <= 2) {
-            res.push(lower);
-        } else {
-            res.push(lower.substring(0, 1).toUpperCase() + lower.substring(1));
+        // i 行
+        for (const num of matrix[i]) {
+            buff[num]++;
         }
-    });
-    
-    return res.join(" ");
+        // i 列
+        for (let j = 0; j < n; j++) {
+            buff[matrix[j][i]]++;
+        }
+        for (let j = 1; j <= n; j++) {
+            if (buff[j] !== 2) {
+                return false;
+            }
+        }
+    }
+
+    return true;
 };
