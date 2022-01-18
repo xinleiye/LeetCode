@@ -3,9 +3,14 @@
  * @return {number}
  */
 var findMinDifference = function(timePoints) {
-    let res = 24 * 60;
-    const DAY_MINUTE = 24 * 60;
     const total = timePoints.length;
+    const DAY_MINUTE = 24 * 60;
+
+    if (total >= DAY_MINUTE) {
+        return 0;
+    }
+
+    let res = DAY_MINUTE;
     const timeToMinute = (str) => {
         const time = str.split(":").map(item => Number(item));
 
