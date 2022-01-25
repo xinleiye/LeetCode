@@ -51,7 +51,7 @@ stockPrice.minimum();     // 返回 2 ，最低价格时间戳为 4 ，价格为
 
 **#**|**编程语言**|**时间（ms / %）**|**内存（MB / %）**|**代码**
 --|--|--|--|--
-1|javascript|728 / 88.46|84.8 / 11.54|[朴素方法]](./javascript/ac_v1.js)
+1|javascript|728 / 88.46|84.8 / 11.54|[朴素方法](./javascript/ac_v1.js)
 
 来源：力扣（LeetCode）
 
