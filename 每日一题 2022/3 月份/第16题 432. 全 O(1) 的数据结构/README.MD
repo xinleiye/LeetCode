@@ -41,7 +41,7 @@ allOne.getMinKey(); // 返回 "leet"
 
 **#**|**编程语言**|**时间（ms / %）**|**内存（MB / %）**|**代码**
 --|--|--|--|--
-1|javascript|?? / ??|?? / ??|[双向列表&哈希表]](./javascript/ac_v1.js)
+1|javascript|?? / ??|?? / ??|[双向列表&哈希表](./javascript/ac_v1.js)
 
 来源：力扣（LeetCode）
 
