@@ -29,11 +29,11 @@
 
 **提示:**
 
-`n == stickers.length`
-`1 <= n <= 50`
-`1 <= stickers[i].length <= 10`
-`1 <= target <= 15`
-`stickers[i]` 和 `target` 由小写英文单词组成
+- `n == stickers.length`
+- `1 <= n <= 50`
+- `1 <= stickers[i].length <= 10`
+- `1 <= target <= 15`
+- `stickers[i]` 和 `target` 由小写英文单词组成
 
 **解答：**
 
