@@ -34,7 +34,7 @@
 
 - `2 <= asteroids.length <= 10^4`
 - `-1000 <= asteroids[i] <= 1000`
-- `asteroids[i] != 0`- 
+- `asteroids[i] != 0`
 
 **解答：**
 
