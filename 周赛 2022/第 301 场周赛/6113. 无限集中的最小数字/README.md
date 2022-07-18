@@ -10,7 +10,7 @@
 
 **示例：**
 
-```
+``` javascript
 输入
 ["SmallestInfiniteSet", "addBack", "popSmallest", "popSmallest", "popSmallest", "addBack", "popSmallest", "popSmallest", "popSmallest"]
 [[], [2], [], [], [], [1], [], [], []]
