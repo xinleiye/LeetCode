@@ -1,50 +1,48 @@
-# 在二叉树中增加一行
+# 数组中的字符串匹配
 
-给定一个二叉树的根 `root` 和两个整数 `val` 和 `depth` ，在给定的深度 `depth` 处添加一个值为 `val` 的节点行。
+给你一个字符串数组 `words` ，数组中的每个字符串都可以看作是一个单词。请你按 **任意** 顺序返回 `words` 中是其他单词的子字符串的所有单词。
 
-注意，根节点 `root` 位于深度 `1` 。
+如果你可以删除 `words[j]` 最左侧和/或最右侧的若干字符得到 `word[i]` ，那么字符串 `words[i]` 就是 `words[j]` 的一个子字符串。
 
-加法规则如下:
-
-- 给定整数 `depth`，对于深度为 `depth - 1` 的每个非空树节点 `cur` ，创建两个值为 `val` 的树节点作为 `cur` 的左子树根和右子树根。
-- `cur` 原来的左子树应该是新的左子树根的左子树。
-- `cur` 原来的右子树应该是新的右子树根的右子树。
-- 如果 `depth == 1` 意味着 `depth - 1` 根本没有深度，那么创建一个树节点，值 `val` 作为整个原始树的新根，而原始树就是新根的左子树。
-
-**示例 1:**
-
-![示例1](eg1.jpg)
+**示例 1：**
 
 ``` javascript
-输入: root = [4,2,6,3,1,5], val = 1, depth = 2
-输出: [4,1,1,2,null,null,6,3,1,5]
+输入：words = ["mass","as","hero","superhero"]
+输出：["as","hero"]
+解释："as" 是 "mass" 的子字符串，"hero" 是 "superhero" 的子字符串。
+["hero","as"] 也是有效的答案。
 ```
 
-**示例 2:**
-
-![示例2](eg2.jpg)
+**示例 2：**
 
 ``` javascript
-输入: root = [4,2,null,3,1], val = 1, depth = 3
-输出:  [4,2,null,1,1,3,null,null,1]
+输入：words = ["leetcode","et","code"]
+输出：["et","code"]
+解释："et" 和 "code" 都是 "leetcode" 的子字符串。
 ```
 
-**提示:**
+**示例 3：**
 
-- 节点数在 `[1, 10^4]` 范围内
-- 树的深度在 `[1, 10^4]` 范围内
-- `-100 <= Node.val <= 100`
-- `-10^5 <= val <= 10^5`
-- `1 <= depth <= the depth of tree + 1`
+``` javascript
+输入：words = ["blue","green","bu"]
+输出：[]
+```
+
+**提示：**
+
+- `1 <= words.length <= 100`
+- `1 <= words[i].length <= 30`
+- `words[i]` 仅包含小写英文字母。
+- 题目数据 **保证** 每个 `words[i]` 都是独一无二的。
 
 **解答：**
 
 **#**|**编程语言**|**时间（ms / %）**|**内存（MB / %）**|**代码**
 --|--|--|--|--
-1|javascript|80 / 88.16|47.2 / 27.63|[深度优先](./javascript/ac_v1.js)
+1|javascript|60 / 81.61|41 / 82.76|[朴素方法](./javascript/ac_v1.js)
 
 来源：力扣（LeetCode）
 
-链接：https://leetcode.cn/problems/add-one-row-to-tree
+链接：https://leetcode.cn/problems/string-matching-in-an-array
 
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
