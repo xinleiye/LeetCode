@@ -46,10 +46,10 @@ circularDeque.getFront();                 // 返回 4
 
 **#**|**编程语言**|**时间（ms / %）**|**内存（MB / %）**|**代码**
 --|--|--|--|--
-1|javascript|108 / 65.52|49.3 / 25.86|[双向列表](./javascript/ac_v1.js)
+1|javascript|108 / 65.52|49.3 / 25.86|[双向链表](./javascript/ac_v1.js)
 
 来源：力扣（LeetCode）
 
-链接：https://leetcode.cn/problems/design-circular-
+链接：https://leetcode.cn/problems/design-circular-deque
 
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
