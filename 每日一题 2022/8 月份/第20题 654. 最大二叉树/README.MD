@@ -46,7 +46,7 @@
 
 **#**|**编程语言**|**时间（ms / %）**|**内存（MB / %）**|**代码**
 --|--|--|--|--
-1|javascript|?? / ??|?? / ??|[递归](./javascript/ac_v1.js)
+1|javascript|84 / 93.73|48.4 / 36.71|[递归](./javascript/ac_v1.js)
 
 来源：力扣（LeetCode）
 
