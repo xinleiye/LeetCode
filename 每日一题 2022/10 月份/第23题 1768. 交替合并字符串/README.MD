@@ -39,8 +39,8 @@ word2：    p   q
 
 **提示：**
 
-`1 <= word1.length, word2.length <= 100`
-`word1` 和 `word2` 由小写英文字母组成
+- `1 <= word1.length, word2.length <= 100`
+- `word1` 和 `word2` 由小写英文字母组成
 
 **解答：**
 
