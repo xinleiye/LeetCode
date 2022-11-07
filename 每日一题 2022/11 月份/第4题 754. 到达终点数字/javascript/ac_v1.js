@@ -1,14 +1,7 @@
 /**
- * @param {string} sequence
- * @param {string} word
+ * @param {number} target
  * @return {number}
  */
-var maxRepeating = function(sequence, word) {
-    for (let i = Math.floor(sequence.length / word.length); i >= 0; i--) {
-        if (sequence.indexOf(word.repeat(i)) >= 0) {
-            return i;
-        }
-    }
+var reachNumber = function(target) {
 
-    return 0;
 };

@@ -1,14 +1,24 @@
 /**
- * @param {string} sequence
- * @param {string} word
- * @return {number}
+ * @param {string} command
+ * @return {string}
  */
-var maxRepeating = function(sequence, word) {
-    for (let i = Math.floor(sequence.length / word.length); i >= 0; i--) {
-        if (sequence.indexOf(word.repeat(i)) >= 0) {
-            return i;
+var interpret = function(command) {
+    const res = [];
+    const total = command.length;
+    let index = 0;
+
+    while (index < total) {
+        if (command[index] === "G") {
+            res.push("G");
+        } else if (command[index] === ")") {
+            if (command[index - 1] === "(") {
+                res.push("o");
+            } else {
+                res.push("al");
+            }
         }
+        index++;
     }
 
-    return 0;
+    return res.join("");
 };
