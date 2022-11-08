@@ -47,10 +47,10 @@
 
 **#**|**编程语言**|**时间（ms / %）**|**内存（MB / %）**|**代码**
 --|--|--|--|--
-1|javascript|?? / ??|?? / ??|[朴素方法](./javascript/ac_v1.js)
+1|javascript|88 / 31.58|46.1 / 15.79|[朴素方法](./javascript/ac_v1.js)
 
 来源：力扣（LeetCode）
 
-链接：https://leetcode.cn/problems/goal-parser-interpretation/description
+链接：https://leetcode.cn/problems/ambiguous-coordinates
 
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
