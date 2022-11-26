@@ -30,7 +30,7 @@ words = ["hello", "hi", "helo"]
 
 **#**|**编程语言**|**时间（ms / %）**|**内存（MB / %）**|**代码**
 --|--|--|--|--
-1|javascript|?? / ??|?? / ??|[双指针](./javascript/ac_v1.js)
+1|javascript|60 / 95.24|41.7 / 80.95|[双指针](./javascript/ac_v1.js)
 
 来源：力扣（LeetCode）
 
