@@ -2,7 +2,7 @@
  * @param {string} coordinates
  * @return {boolean}
  */
- var squareIsWhite = function(coordinates) {
+var squareIsWhite = function(coordinates) {
     const colorObj = {
         a: 1,
         b: 0,
