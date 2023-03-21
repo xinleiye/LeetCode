@@ -1,52 +1,32 @@
 /**
- * @param {string} s
- * @param {number} a
- * @param {number} b
- * @return {string}
+ * @param {number} n
+ * @return {number}
  */
-var findLexSmallestString = function(s, a, b) {
-    let res = "";
-    const strSet = new Set();
-    const transformStr = (str) => {
-        return str.substr(b) + str.substr(0, b);
-    };
-    const plusNum = (str, num) => {
-        let ret = "";
-
-        for (let i = 0; i < str.length; i++) {
-            if (i % 2) {
-                ret = ret + (parseInt(str[i], 10) + num) % 10;
-            } else {
-                ret += str[i];
-            }
+var numDupDigitsAtMostN = function(n) {
+    const strN = String(n);
+    const memo = new Array(strN.length).fill(0).map(() => new Array(1 << 10).fill(-1));
+    const dfsSearch = (mask, len, isSame, str, cache) => {
+        if (len === str.length) {
+            return 1;
+        }
+        if (!isSame && cache[len][mask] >= 0) {
+            return cache[len][mask];
         }
 
-        return ret;
-    };
-    const dfsSearch = (str) => {
-        let tStr = transformStr(str);
-        let pStr = plusNum(str, a);
+        let res = 0;
+        let max = isSame ? Number(str[len]) : 9;
+        for (let i = 0; i <= max; i++) {
+            if ((mask & (1 << i)) !== 0) {
+                continue;
+            }
+            res += dfsSearch((mask === 0 && i === 0) ? mask : mask | (1 << i), len + 1, isSame && i === max, str, cache)
+        }
+        if (!isSame) {
+            cache[len][mask] = res;
+        }
 
-        if (!strSet.has(tStr)) {
-            strSet.add(tStr);
-            if (tStr < res) {
-                res = tStr;
-            }
-            dfsSearch(tStr);
-        }
-        if (!strSet.has(pStr)) {
-            strSet.add(pStr);
-            if (pStr < res) {
-                res = pStr;
-            }
-            dfsSearch(pStr);
-        }
+        return res;
     };
 
-    for (let i = 0; i < s.length; i++) {
-        res += "9";
-    }
-    dfsSearch(s);
-
-    return res;
+    return n + 1 - dfsSearch(0, 0, true, strN, memo);
 };
