@@ -1,29 +1,29 @@
 /**
- * @param {number[][]} grid
+ * Definition for a binary tree node.
+ * function TreeNode(val, left, right) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.left = (left===undefined ? null : left)
+ *     this.right = (right===undefined ? null : right)
+ * }
+ */
+/**
+ * @param {TreeNode} root
  * @return {number}
  */
-var countServers = function(grid) {
+var goodNodes = function(root) {
     let res = 0;
-    const maxRow = grid.length;
-    const maxCol = grid[0].length;
-    const rowCount = new Array(maxRow).fill(0);
-    const colCount = new Array(maxCol).fill(0);
+    const preOrder = (node, max) => {
+        if (!node) {
+            return;
+        }
+        if (node.val >= max) {
+            res++;
+        }
+        preOrder(node.left, Math.max(node.val, max));
+        preOrder(node.right, Math.max(node.val, max));
+    };
 
-    for (let i = 0; i < maxRow; i++) {
-        for (let j = 0; j < maxCol; j++) {
-            if (grid[i][j] === 1) {
-                rowCount[i]++;
-                colCount[j]++;
-            }
-        }
-    }
-    for (let i = 0; i < maxRow; i++) {
-        for (let j = 0; j < maxCol; j++) {
-            if (grid[i][j] === 1 && (rowCount[i] > 1 || colCount[j] > 1)) {
-                res++;
-            }
-        }
-    }
+    preOrder(root, -1e4);
 
     return res;
 };

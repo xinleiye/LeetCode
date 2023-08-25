@@ -38,11 +38,11 @@
 
 **提示：**
 
-`m == grid.length`
-`n == grid[i].length`
-`1 <= m <= 250`
-`1 <= n <= 250`
-`grid[i][j] == 0 or 1`
+- `m == grid.length`
+- `n == grid[i].length`
+- `1 <= m <= 250`
+- `1 <= n <= 250`
+- `grid[i][j] == 0 or 1`
 
 **解答：**
 
