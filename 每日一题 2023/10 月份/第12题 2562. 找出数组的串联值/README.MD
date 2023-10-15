@@ -63,6 +63,6 @@ nums 只有一个元素，所以我们选中 13 并将其加到串联值上，�
 
 来源：力扣（LeetCode）
 
-链接：https://leetcode.cn/problems/movement-of-robots
+链接：https://leetcode.cn/problems/find-the-array-concatenation-value
 
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
