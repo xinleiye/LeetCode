@@ -76,7 +76,7 @@ findElements.find(5); // return True
 
 **#**|**编程语言**|**时间（ms / %）**|**内存（MB / %）**|**代码**
 --|--|--|--|--
-1|javascript|118 / 62.866|61.70 / 34.29|[深度优先&哈希](./javascript/ac_v1.js)
+1|javascript|118 / 62.86|61.70 / 34.29|[深度优先&哈希](./javascript/ac_v1.js)
 
 来源：力扣（LeetCode）
 
