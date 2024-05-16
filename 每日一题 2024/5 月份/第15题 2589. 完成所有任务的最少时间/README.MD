@@ -35,7 +35,7 @@
 - `1 <= tasks.length <= 2000`
 - `tasks[i].length == 3`
 - `1 <= starti, endi <= 2000`
-- `1 <= durationi <= endi - starti + 1 `
+- `1 <= durationi <= endi - starti + 1`
 
 **解答：**
 
