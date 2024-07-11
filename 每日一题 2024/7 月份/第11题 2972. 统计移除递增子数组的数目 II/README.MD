@@ -1,4 +1,4 @@
-# 统计移除递增子数组的数目 I
+# 统计移除递增子数组的数目 II
 
 给你一个下标从 **0** 开始的 **正** 整数数组 `nums` 。
 
@@ -37,17 +37,17 @@ nums 中只有这 7 个移除递增子数组。
 
 **提示：**
 
-- `1 <= nums.length <= 50`
-- `1 <= nums[i] <= 50`
+- `1 <= nums.length <= 10^5`
+- `1 <= nums[i] <= 10^9`
 
 **解答：**
 
 **#**|**编程语言**|**时间（ms / %）**|**内存（MB / %）**|**代码**
 --|--|--|--|--
-1|javascript|91 / 55.00|50.62 / 95.00|[双指针](./javascript/ac_v1.js)
+1|javascript|98 / 16.67|61.42 / 100.00|[双指针](./javascript/ac_v1.js)
 
 来源：力扣（LeetCode）
 
-链接：https://leetcode.cn/problems/count-the-number-of-incremovable-subarrays-i
+链接：https://leetcode.cn/problems/count-the-number-of-incremovable-subarrays-ii
 
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
