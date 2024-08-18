@@ -1,8 +1,8 @@
 /**
- * @param {number[]} nums
- * @param {number[]} andValues
+ * @param {string} word
+ * @param {number} k
  * @return {number}
  */
-var minimumValueSum = function(nums, andValues) {
+var minimumOperationsToMakeKPeriodic = function(word, k) {
 
 };
