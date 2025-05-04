@@ -1,47 +1,39 @@
-# 行相等的最少多米诺旋转
+# 等价多米诺骨牌对的数量
 
-在一排多米诺骨牌中，`tops[i]` 和 `bottoms[i]` 分别代表第 `i` 个多米诺骨牌的上半部分和下半部分。（一个多米诺是两个从 1 到 6 的数字同列平铺形成的 —— 该平铺的每一半上都有一个数字。）
+给你一组多米诺骨牌 `dominoes` 。
 
-我们可以旋转第 `i` 张多米诺，使得 `tops[i]` 和 `bottoms[i]` 的值交换。
+形式上，`dominoes[i] = [a, b]` 与 `dominoes[j] = [c, d]` **等价** 当且仅当 (`a == c` 且 `b == d`) 或者 (`a == d` 且 `b == c`) 。即一张骨牌可以通过旋转 `0` 度或 `180` 度得到另一张多米诺骨牌。
 
-返回能使 `tops` 中所有值或者 `bottoms` 中所有值都相同的最小旋转次数。
-
-如果无法做到，返回 `-1`.
+在 `0 <= i < j < dominoes.length` 的前提下，找出满足 `dominoes[i]` 和 `dominoes[j]` 等价的骨牌对 `(i, j)` 的数量。
 
 **示例 1：**
 
-![示例1](./eg1.png)
-
-``` javascript
-输入：tops = [2,1,2,4,2,2], bottoms = [5,2,6,2,3,2]
-输出：2
-解释：
-图一表示：在我们旋转之前， tops 和 bottoms 给出的多米诺牌。
-如果我们旋转第二个和第四个多米诺骨牌，我们可以使上面一行中的每个值都等于 2，如图二所示。
+```
+输入：dominoes = [[1,2],[2,1],[3,4],[5,6]]
+输出：1
 ```
 
 **示例 2：**
 
-``` javascript
-输入：tops = [3,5,1,2,3], bottoms = [3,6,3,3,4]
-输出：-1
-解释：在这种情况下，不可能旋转多米诺牌使一行的值相等。
+```
+输入：dominoes = [[1,2],[1,2],[1,1],[1,2],[2,2]]
+输出：3
 ```
 
 **提示：**
 
-- `2 <= tops.length <= 2 * 10^4`
-- `bottoms.length == tops.length`
-- `1 <= tops[i], bottoms[i] <= 6`
+- `1 <= dominoes.length <= 4 * 10^4`
+- `dominoes[i].length == 2`
+- `1 <= dominoes[i][j] <= 9`
 
 **解答：**
 
 **#**|**编程语言**|**时间（ms / %）**|**内存（MB / %）**|**代码**
 --|--|--|--|--
-1|javascript|?? / ??|?? / ??|[??](./javascript/ac_v1.js)
+1|javascript|12 / 71.43|66.34 / 54.29|[哈希](./javascript/ac_v1.js)
 
 来源：力扣（LeetCode）
 
-链接：https://leetcode.cn/problems/minimum-domino-rotations-for-equal-row
+链接：https://leetcode.cn/problems/number-of-equivalent-domino-pairs
 
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
