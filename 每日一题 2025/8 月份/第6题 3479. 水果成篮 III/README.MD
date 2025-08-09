@@ -1,4 +1,4 @@
-# 水果成篮 II
+# 水果成篮 III
 
 给你两个长度为 `n` 的整数数组，`fruits` 和 `baskets`，其中 `fruits[i]` 表示第 `i` 种水果的 **数量**，`baskets[j]` 表示第 `j` 个篮子的 **容量**。
 
@@ -41,17 +41,17 @@
 **提示：**
 
 - `n == fruits.length == baskets.length`
-- `1 <= n <= 100`
-- `1 <= fruits[i], baskets[i] <= 1000`
+- `1 <= n <= 10^5`
+- `1 <= fruits[i], baskets[i] <= 10^9`
 
 **解答：**
 
 **#**|**编程语言**|**时间（ms / %）**|**内存（MB / %）**|**代码**
 ------|----------|-----------------|----------------|--------
-1|javascript|0 / 100.00|56.31 / 32.92|[朴素方法](./javascript/ac_v1.js)
+1|javascript|610 / 74.36|80.39 / 41.03|[分块](./javascript/ac_v1.js)
 
 来源：力扣（LeetCode）
 
-链接：https://leetcode.cn/problems/fruits-into-baskets-ii
+链接：https://leetcode.cn/problems/fruits-into-baskets-iii
 
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
